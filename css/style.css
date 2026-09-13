@@ -1038,7 +1038,6 @@ body.vkusdom-no-scroll {
   font-weight: 600;
   color: var(--vkusdom-color-on-brand);
   text-align: center;
-  color: inherit;
   text-decoration: none;
   background: var(--vkusdom-color-brand);
   border-radius: var(--vkusdom-radius-button);
