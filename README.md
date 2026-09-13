@@ -2,7 +2,7 @@
 
 # 🛒 ВкусДом — страница «Все бренды»
 
-**Каталог брендов гипермаркета с алфавитным фильтром, слайдером популярных марок и полной адаптивностью.**
+**Интернет-магазин с каталогом всех брендов гипермаркета с алфавитным фильтром, слайдером популярных марок и полной адаптивностью.**
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
@@ -79,8 +79,8 @@
 ## 📁 Структура
 
 ```
-vkusdom-f-6/
-├── index.html           # Страница целиком
+vkusdom/
+├── index.html           # Главная страница HTML5
 ├── css/
 │   └── style.css        # Стили (CSS3 + переменные)
 ├── js/
@@ -93,9 +93,6 @@ vkusdom-f-6/
 │   ├── badge-*.svg      # Иконки магазинов приложений
 │   ├── social-*.svg     # Иконки соцсетей
 │   └── logo_*.svg       # Логотипы ВкусДом
-├── scripts/
-│   ├── build-images.bat # Генерация WebP (Windows)
-│   └── build-images.sh  # Генерация WebP (*nix)
 └── README.md
 ```
 
@@ -105,7 +102,6 @@ vkusdom-f-6/
 - **`css/style.css`** — все стили в одном файле, CSS3 + переменные.
 - **`js/main.js`** — вся логика без сборщиков и зависимостей.
 - **`img/`** — исходники PNG + сгенерированные WebP.
-- **`scripts/`** — вспомогательные утилиты для конвертации картинок.
 
 ## 🚀 Запуск
 
@@ -136,6 +132,11 @@ VS Code: расширение Live Server → правый клик на index.h
 </div>
 
 📄 Лицензия
+
+<div align="center">
+
 Распространяется под лицензией MIT. Подробнее — в файле LICENSE.
 
 Сделано с 💚 для ВкусДом
+
+</div>
