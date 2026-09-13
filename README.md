@@ -76,32 +76,36 @@
 
 > 📦 **Без сборщиков.** Никакого webpack / vite / gulp. Внешние зависимости — только CDN Swiper и Google Fonts.
 
-<div align="center">
-
 ## 📁 Структура
 
-<pre>
+```
 vkusdom-f-6/
-├── index.html           — страница целиком
+├── index.html           # Страница целиком
 ├── css/
-│   └── style.css        — стили (CSS3 + переменные)
+│   └── style.css        # Стили (CSS3 + переменные)
 ├── js/
-│   └── main.js          — логика (vanilla JS)
-├── img/                 — ассеты
-│   ├── brand_N.png      — исходники логотипов
-│   ├── brand_N-115.webp — мобильный слайдер
-│   ├── brand_N-215.webp — десктоп-слайдер
-│   ├── brand_N-430.webp — retina-версия
-│   ├── badge-*.svg      — иконки магазинов приложений
-│   ├── social-*.svg     — иконки соцсетей
-│   └── logo_*.svg       — логотипы ВкусДом
+│   └── main.js          # Логика (vanilla JS)
+├── img/                 # Ассеты
+│   ├── brand_N.png      # Исходники логотипов
+│   ├── brand_N-115.webp # Мобильный слайдер
+│   ├── brand_N-215.webp # Десктоп-слайдер
+│   ├── brand_N-430.webp # Retina-версия
+│   ├── badge-*.svg      # Иконки магазинов приложений
+│   ├── social-*.svg     # Иконки соцсетей
+│   └── logo_*.svg       # Логотипы ВкусДом
 ├── scripts/
-│   ├── build-images.bat — генерация WebP (Windows)
-│   └── build-images.sh  — генерация WebP (*nix)
+│   ├── build-images.bat # Генерация WebP (Windows)
+│   └── build-images.sh  # Генерация WebP (*nix)
 └── README.md
-</pre>
+```
 
-</div>
+**Пояснения:**
+
+- **`index.html`** — единственная страница проекта.
+- **`css/style.css`** — все стили в одном файле, CSS3 + переменные.
+- **`js/main.js`** — вся логика без сборщиков и зависимостей.
+- **`img/`** — исходники PNG + сгенерированные WebP.
+- **`scripts/`** — вспомогательные утилиты для конвертации картинок.
 
 ## 🚀 Запуск
 
@@ -124,16 +128,14 @@ VS Code: расширение Live Server → правый клик на index.h
 📱 Проверено в браузерах
 <div align="center">
 
-[![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white)]
-[![Safari](https://img.shields.io/badge/Safari-000000?style=flat-square&logo=safari&logoColor=white)]
-[![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)]
-[![Edge](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)]
+![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-000000?style=flat-square&logo=safari&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)
+![Edge](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)
 
 </div>
 
 📄 Лицензия
 Распространяется под лицензией MIT. Подробнее — в файле LICENSE.
 
-<div align="center">
 Сделано с 💚 для ВкусДом
-</div>
