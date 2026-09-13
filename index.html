@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все бренды — ВкусДом</title>
+  <meta name="description" content="Каталог всех брендов гипермаркета ВкусДом. Выбирайте продукты любимых марок с доставкой на дом.">
+  <meta name="theme-color" content="#4A6F5A">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Все бренды — ВкусДом">
+  <meta property="og:description" content="Каталог всех брендов гипермаркета ВкусДом. Выбирайте продукты любимых марок с доставкой на дом.">
+  <meta property="og:url" content="https://vkusdom.ru/brands/">
+  <meta property="og:image" content="https://vkusdom.ru/img/og-brands.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ВкусДом">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Все бренды — ВкусДом">
+  <meta name="twitter:description" content="Каталог всех брендов гипермаркета ВкусДом.">
+  <meta name="twitter:image" content="https://vkusdom.ru/img/og-brands.jpg">
+
+  <link rel="canonical" href="https://vkusdom.ru/brands/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    if (window.matchMedia && 'IntersectionObserver' in window) {
+      document.documentElement.classList.add('vkusdom-js');
+    }
+  </script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://vkusdom.ru/" },
+          { "@type": "ListItem", "position": 2, "name": "Бренды", "item": "https://vkusdom.ru/brands/" }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "name": "Все бренды — ВкусДом",
+        "url": "https://vkusdom.ru/brands/",
+        "description": "Каталог всех брендов гипермаркета ВкусДом.",
+        "inLanguage": "ru-RU",
+        "isPartOf": { "@type": "WebSite", "name": "ВкусДом", "url": "https://vkusdom.ru/" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="vkusdom-skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- SVG-спрайт -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="vkusdom-icon-catalog" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11.25 7.5C11.25 8.24168 11.0301 8.96671 10.618 9.58339C10.206 10.2001 9.62029 10.6807 8.93506 10.9646C8.24984 11.2484 7.49584 11.3226 6.76841 11.1779C6.04098 11.0333 5.3728 10.6761 4.84835 10.1517C4.3239 9.6272 3.96675 8.95902 3.82206 8.23159C3.67736 7.50416 3.75162 6.75016 4.03545 6.06494C4.31928 5.37972 4.79993 4.79405 5.41661 4.38199C6.0333 3.96994 6.75832 3.75 7.5 3.75C8.49456 3.75 9.44839 4.14509 10.1517 4.84835C10.8549 5.55161 11.25 6.50544 11.25 7.5ZM16.5 11.25C17.2417 11.25 17.9667 11.0301 18.5834 10.618C19.2001 10.206 19.6807 9.62029 19.9646 8.93506C20.2484 8.24984 20.3226 7.49584 20.1779 6.76841C20.0333 6.04098 19.6761 5.3728 19.1517 4.84835C18.6272 4.3239 17.959 3.96675 17.2316 3.82206C16.5042 3.67736 15.7502 3.75162 15.0649 4.03545C14.3797 4.31928 13.794 4.79993 13.382 5.41661C12.9699 6.0333 12.75 6.75832 12.75 7.5C12.75 8.49456 13.1451 9.44839 13.8484 10.1517C14.5516 10.8549 15.5054 11.25 16.5 11.25ZM7.5 12.75C6.75832 12.75 6.0333 12.9699 5.41661 13.382C4.79993 13.794 4.31928 14.3797 4.03545 15.0649C3.75162 15.7502 3.67736 16.5042 3.82206 17.2316C3.96675 17.959 4.3239 18.6272 4.84835 19.1517C5.3728 19.6761 6.04098 20.0333 6.76841 20.1779C7.49584 20.3226 8.24984 20.2484 8.93506 19.9646C9.62029 19.6807 10.206 19.2001 10.618 18.5834C11.0301 17.9667 11.25 17.2417 11.25 16.5C11.25 15.5054 10.8549 14.5516 10.1517 13.8484C9.44839 13.1451 8.49456 12.75 7.5 12.75ZM16.5 12.75C15.7583 12.75 15.0333 12.9699 14.4166 13.382C13.7999 13.794 13.3193 14.3797 13.0355 15.0649C12.7516 15.7502 12.6774 16.5042 12.8221 17.2316C12.9668 17.959 13.3239 18.6272 13.8484 19.1517C14.3728 19.6761 15.041 20.0333 15.7684 20.1779C16.4958 20.3226 17.2498 20.2484 17.9351 19.9646C18.6203 19.6807 19.206 19.2001 19.618 18.5834C20.0301 17.9667 20.25 17.2417 20.25 16.5C20.25 15.5054 19.8549 14.5516 19.1517 13.8484C18.4484 13.1451 17.4946 12.75 16.5 12.75Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-search" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"/>
+        <path d="M15.8027 15.8037L20.9993 21.0003"/>
+      </g>
+    </symbol>
+    <symbol id="vkusdom-icon-mappin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 1.5C9.81273 1.50248 7.71575 2.37247 6.16911 3.91911C4.62247 5.46575 3.75248 7.56273 3.75 9.75C3.75 16.8094 11.25 22.1409 11.5697 22.3641C11.6958 22.4524 11.846 22.4998 12 22.4998C12.154 22.4998 12.3042 22.4524 12.4303 22.3641C12.75 22.1409 20.25 16.8094 20.25 9.75C20.2475 7.56273 19.3775 5.46575 17.8309 3.91911C16.2843 2.37247 14.1873 1.50248 12 1.5ZM12 6.75C12.5933 6.75 13.1734 6.92595 13.6667 7.25559C14.1601 7.58524 14.5446 8.05377 14.7716 8.60195C14.9987 9.15013 15.0581 9.75333 14.9424 10.3353C14.8266 10.9172 14.5409 11.4518 14.1213 11.8713C13.7018 12.2909 13.1672 12.5766 12.5853 12.6924C12.0033 12.8081 11.4001 12.7487 10.8519 12.5216C10.3038 12.2946 9.83524 11.9101 9.50559 11.4167C9.17595 10.9234 9 10.3433 9 9.75C9 8.95435 9.31607 8.19129 9.87868 7.62868C10.4413 7.06607 11.2044 6.75 12 6.75Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-heart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M22.5 9.5625C22.5 16.125 12.7697 21.4369 12.3553 21.6562C12.2461 21.715 12.124 21.7458 12 21.7458C11.876 21.7458 11.7539 21.715 11.6447 21.6562C11.2303 21.4369 1.5 16.125 1.5 9.5625C1.50174 8.02146 2.11468 6.54404 3.20436 5.45436C4.29404 4.36468 5.77146 3.75174 7.3125 3.75C9.24844 3.75 10.9434 4.5825 12 5.98969C13.0566 4.5825 14.7516 3.75 16.6875 3.75C18.2285 3.75174 19.706 4.36468 20.7956 5.45436C21.8853 6.54404 22.4983 8.02146 22.5 9.5625Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-cart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M22.4728 6.95062L20.0691 15.6019C19.9369 16.0745 19.6542 16.4911 19.2639 16.7885C18.8736 17.0859 18.397 17.2479 17.9062 17.25H8.64C8.14784 17.2498 7.66926 17.0886 7.27725 16.791C6.88523 16.4935 6.6013 16.0758 6.46875 15.6019L3.18 3.75H1.5C1.30109 3.75 1.11032 3.67098 0.96967 3.53033C0.829018 3.38968 0.75 3.19891 0.75 3C0.75 2.80109 0.829018 2.61032 0.96967 2.46967C1.11032 2.32902 1.30109 2.25 1.5 2.25H3.75C3.91397 2.24997 4.07343 2.30367 4.20398 2.40289C4.33452 2.50211 4.42895 2.64138 4.47281 2.79938L5.36156 6H21.75C21.8656 5.99998 21.9797 6.02669 22.0833 6.07805C22.1869 6.1294 22.2772 6.20401 22.3472 6.29605C22.4171 6.38809 22.4649 6.49506 22.4867 6.60861C22.5085 6.72216 22.5037 6.83922 22.4728 6.95062ZM8.25 18.75C7.95333 18.75 7.66332 18.838 7.41665 19.0028C7.16997 19.1676 6.97771 19.4019 6.86418 19.676C6.75065 19.9501 6.72094 20.2517 6.77882 20.5426C6.8367 20.8336 6.97956 21.1009 7.18934 21.3107C7.39912 21.5204 7.66639 21.6633 7.95736 21.7212C8.24834 21.7791 8.54994 21.7494 8.82403 21.6358C9.09811 21.5223 9.33238 21.33 9.4972 21.0834C9.66203 20.8367 9.75 20.5467 9.75 20.25C9.75 19.8522 9.59196 19.4706 9.31066 19.1893C9.02936 18.908 8.64782 18.75 8.25 18.75ZM18 18.75C17.7033 18.75 17.4133 18.838 17.1666 19.0028C16.92 19.1676 16.7277 19.4019 16.6142 19.676C16.5006 19.9501 16.4709 20.2517 16.5288 20.5426C16.5867 20.8336 16.7296 21.1009 16.9393 21.3107C17.1491 21.5204 17.4164 21.6633 17.7074 21.7212C17.9983 21.7791 18.2999 21.7494 18.574 21.6358C18.8481 21.5223 19.0824 21.33 19.2472 21.0834C19.412 20.8367 19.5 20.5467 19.5 20.25C19.5 19.8522 19.342 19.4706 19.0607 19.1893C18.7794 18.908 18.3978 18.75 18 18.75Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-user" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11.9995 13.6396C15.1204 13.6396 17.6504 11.1096 17.6504 7.98875C17.6504 4.86787 15.1204 2.33789 11.9995 2.33789C8.87861 2.33789 6.34863 4.86787 6.34863 7.98875C6.34863 11.1096 8.87861 13.6396 11.9995 13.6396Z"/>
+      <path fill="currentColor" d="M12.001 14.4629C7.85414 14.4629 4.31761 16.656 2.29493 19.9445C2.18441 20.1241 2.12988 20.3321 2.12988 20.5431C2.12988 21.2055 2.66685 21.7424 3.32923 21.7424H20.6728C21.3352 21.7424 21.8721 21.2055 21.8721 20.5431C21.8721 20.3321 21.8176 20.1241 21.7071 19.9445C19.6844 16.656 16.1479 14.4629 12.001 14.4629Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-caret" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M10.5 8.25L14.25 12L10.5 15.75"/>
+    </symbol>
+    <symbol id="vkusdom-icon-caret-sm" viewBox="0 0 16 16">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7 5.5L9.5 8L7 10.5"/>
+    </symbol>
+    <symbol id="vkusdom-icon-h1" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14.25 16.5L9.75 12L14.25 7.5"/>
+    </symbol>
+    <symbol id="vkusdom-icon-slider" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10.5 8.25L14.25 12L10.5 15.75"/>
+    </symbol>
+    <symbol id="vkusdom-icon-bike" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12.75 4.875C12.75 4.35583 12.904 3.84831 13.1924 3.41663C13.4808 2.98495 13.8908 2.6485 14.3705 2.44982C14.8501 2.25114 15.3779 2.19915 15.8871 2.30044C16.3963 2.40173 16.864 2.65173 17.2312 3.01885C17.5983 3.38596 17.8483 3.85369 17.9496 4.36289C18.0508 4.87209 17.9989 5.39989 17.8002 5.87955C17.6015 6.3592 17.2651 6.76917 16.8334 7.05761C16.4017 7.34605 15.8942 7.5 15.375 7.5C14.6788 7.5 14.0111 7.22344 13.5188 6.73116C13.0266 6.23887 12.75 5.57119 12.75 4.875ZM22.5 16.5C22.5 17.2417 22.2801 17.9667 21.868 18.5834C21.456 19.2001 20.8703 19.6807 20.1851 19.9646C19.4998 20.2484 18.7458 20.3226 18.0184 20.1779C17.291 20.0333 16.6228 19.6761 16.0984 19.1517C15.5739 18.6272 15.2168 17.959 15.0721 17.2316C14.9274 16.5042 15.0016 15.7502 15.2855 15.0649C15.5693 14.3797 16.0499 13.794 16.6666 13.382C17.2833 12.9699 18.0083 12.75 18.75 12.75C19.7446 12.75 20.6984 13.1451 21.4017 13.8484C22.1049 14.5516 22.5 15.5054 22.5 16.5ZM18.75 10.5C18.75 10.3011 18.671 10.1103 18.5303 9.96967C18.3897 9.82902 18.1989 9.75 18 9.75H14.5603L11.7806 6.96938C11.711 6.89964 11.6283 6.84433 11.5372 6.80658C11.4462 6.76884 11.3486 6.74941 11.25 6.74941C11.1514 6.74941 11.0538 6.76884 10.9628 6.80658C10.8717 6.84433 10.789 6.89964 10.7194 6.96938L7.71938 9.96938C7.64964 10.039 7.59433 10.1217 7.55658 10.2128C7.51884 10.3038 7.49941 10.4014 7.49941 10.5C7.49941 10.5986 7.51884 10.6962 7.55658 10.7872C7.59433 10.8783 7.64964 10.961 7.71938 11.0306L11.25 14.5603V18.75C11.25 18.9489 11.329 19.1397 11.4697 19.2803C11.6103 19.421 11.8011 19.5 12 19.5C12.1989 19.5 12.3897 19.421 12.5303 19.2803C12.671 19.1397 12.75 18.9489 12.75 18.75V14.25C12.7501 14.1515 12.7307 14.0539 12.6931 13.9629C12.6555 13.8718 12.6003 13.7891 12.5306 13.7194L9.31031 10.5L11.25 8.56031L13.7194 11.0306C13.7891 11.1003 13.8718 11.1555 13.9629 11.1931C14.0539 11.2307 14.1515 11.2501 14.25 11.25H18C18.1989 11.25 18.3897 11.171 18.5303 11.0303C18.671 10.8897 18.75 10.6989 18.75 10.5ZM9 16.5C9 17.2417 8.78007 17.9667 8.36801 18.5834C7.95596 19.2001 7.37029 19.6807 6.68506 19.9646C5.99984 20.2484 5.24584 20.3226 4.51841 20.1779C3.79098 20.0333 3.1228 19.6761 2.59835 19.1517C2.0739 18.6272 1.71675 17.959 1.57206 17.2316C1.42736 16.5042 1.50162 15.7502 1.78545 15.0649C1.78545 15.0649 2.54993 13.794 3.16661 13.382C3.7833 12.9699 4.50832 12.75 5.25 12.75C5.74246 12.75 6.23009 12.847 6.68506 13.0355C7.14004 13.2239 7.55343 13.5001 7.90165 13.8484C8.24987 14.1966 8.52609 14.61 8.71455 15.0649C8.90301 15.5199 9 16.0075 9 16.5Z"/>
+      <path fill="currentColor" d="M5.51792 10.1337C5.65425 10.1885 5.80364 10.202 5.94757 10.1725C6.09149 10.1431 6.22361 10.0721 6.32752 9.96824L10.3684 5.93141C10.509 5.79085 10.588 5.60022 10.5881 5.40142C10.5882 5.20262 10.5094 5.01191 10.369 4.87121L8.35056 2.85075C8.21 2.71017 8.01937 2.63114 7.82057 2.63104C7.62177 2.63094 7.43106 2.70977 7.29035 2.85021L3.24944 6.88704C3.10885 7.02761 3.02983 7.21823 3.02973 7.41703C3.02963 7.61583 3.10846 7.80654 3.2489 7.94725L5.26732 9.96771C5.33879 10.0394 5.42404 10.0959 5.51792 10.1337Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-storefront" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21.7209 8.79469L20.3766 4.0875C20.2861 3.77523 20.0971 3.50059 19.8378 3.30459C19.5784 3.10858 19.2626 3.00174 18.9375 3H5.0625C4.73741 3.00174 4.4216 3.10858 4.16223 3.30459C3.90287 3.50059 3.71386 3.77523 3.62344 4.0875L2.27906 8.79469C2.25984 8.86143 2.25006 8.93054 2.25 9V10.5C2.25 11.0822 2.38554 11.6563 2.6459 12.1771C2.90625 12.6978 3.28426 13.1507 3.75 13.5V20.25C3.75 20.4489 3.82902 20.6397 3.96967 20.7803C4.11032 20.921 4.30109 21 4.5 21H19.5C19.6989 21 19.8897 20.921 20.0303 20.7803C20.171 20.6397 20.25 20.4489 20.25 20.25V13.5C20.7157 13.1507 21.0937 12.6978 21.3541 12.1771C21.6145 11.6563 21.75 11.0822 21.75 10.5V9C21.7499 8.93054 21.7402 8.86143 21.7209 8.79469ZM8.25 10.5C8.24986 10.8869 8.14996 11.2673 7.95993 11.6043C7.7699 11.9413 7.49617 12.2236 7.16518 12.424C6.83419 12.6244 6.45713 12.736 6.07041 12.7481C5.68368 12.7602 5.30037 12.6724 4.9575 12.4931C4.90533 12.4525 4.84794 12.4191 4.78688 12.3937C4.46913 12.1903 4.20764 11.9103 4.02645 11.5794C3.84527 11.2484 3.7502 10.8773 3.75 10.5V9.75H8.25V10.5ZM14.25 10.5C14.25 11.0967 14.0129 11.669 13.591 12.091C13.169 12.5129 12.5967 12.75 12 12.75C11.4033 12.75 10.831 12.5129 10.409 12.091C9.98705 11.669 9.75 11.0967 9.75 10.5V9.75H14.25V10.5ZM20.25 10.5C20.2497 10.8774 20.1545 11.2486 19.9731 11.5795C19.7918 11.9104 19.5301 12.1904 19.2122 12.3937C19.1519 12.4191 19.0952 12.4522 19.0434 12.4922C18.7006 12.6716 18.3173 12.7596 17.9305 12.7477C17.5437 12.7357 17.1666 12.6242 16.8355 12.424C16.5044 12.2237 16.2305 11.9414 16.0404 11.6044C15.8502 11.2673 15.7502 10.887 15.75 10.5V9.75H20.25V10.5Z"/>
+    </symbol>
+    <symbol id="vkusdom-icon-x" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6L6 18"/>
+        <path d="M6 6L18 18"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="vkusdom-header vkusdom-header--desktop">
+    <div class="vkusdom-header__main">
+      <div class="vkusdom-container vkusdom-header__main-inner">
+        <a class="vkusdom-logo vkusdom-logo--header" href="/" aria-label="ВкусДом — на главную">
+          <svg class="vkusdom-logo__image" width="164" height="40" viewBox="0 0 164 40" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M110.859 21.6291L110.981 27.1034H114.006L114.128 25.2211H123.69V27.1034H127.081V21.6291H125.508V9.13574H114.372L113.158 19.833C112.914 21.4566 112.555 21.6291 110.859 21.6291ZM118.122 12.814L121.269 12.7278V21.7153H116.793C117.397 20.2641 117.397 19.1505 117.641 17.4335C117.641 16.4061 117.885 13.4965 118.122 12.814Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M148.259 25.1417L152.376 25.2279V17.8713C153.102 18.2161 155.523 21.291 156.004 21.3772C156.607 21.291 156.73 20.9461 157.096 20.6085L159.761 17.9575V25.1489L164 25.2351V9.06348C161.823 9.06348 162.549 9.14972 161.457 10.1771L156.255 15.9962C155.53 15.6514 154.926 14.7103 154.316 14.114C153.59 13.4315 150.566 9.83222 149.84 9.23593C149.596 8.9773 148.748 9.06347 148.267 9.14968V25.1489L148.259 25.1417Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.4293 25.1422H53.1192C55.0589 25.1422 56.8693 25.2285 58.2056 24.2873C59.2976 23.691 60.1453 22.4051 60.2603 20.6952C60.3824 18.813 59.5347 17.3546 58.3206 16.8445C58.687 16.2482 60.016 15.3933 59.5347 12.9076C58.5648 7.85712 52.2715 9.1431 47.5514 9.05689L47.4293 25.1422ZM51.668 12.728C52.1493 12.6418 53.7227 12.6418 54.2112 12.728C55.0589 12.8142 55.4182 13.2381 55.5403 14.0139C55.5403 14.9551 55.0589 15.3862 54.2112 15.3862C53.4856 15.3862 52.2715 15.4723 51.668 15.2999V12.7352V12.728ZM51.668 18.8058C52.2715 18.7196 53.8448 18.8058 54.5704 18.8058C55.5403 18.8058 56.1437 19.0644 56.1437 20.0918C56.1437 21.1191 55.5403 21.4639 54.5704 21.4639C53.7227 21.4639 52.2715 21.5502 51.668 21.3777V18.813V18.8058Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M136.522 8.87724C131.802 9.38732 128.655 12.9004 129.136 18.1161C129.503 22.8217 133.253 25.99 138.454 25.4727C142.93 24.9626 146.077 21.1909 145.595 16.0614C145.114 11.6144 141.479 8.35997 136.514 8.87005M136.766 12.9004C142.211 11.9592 143.181 20.688 137.973 21.4567C132.527 22.3116 131.435 13.7553 136.766 12.9004Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.1585 15.3854V9.13516H62.9199V25.1343L67.1585 25.2206C67.1585 24.107 67.0364 19.8324 67.2807 19.0565H69.0983L72.6114 25.2206H77.4535C77.4535 24.107 75.8802 22.1385 75.2767 21.1974L72.8556 17.4329C73.0999 17.0018 73.4591 16.578 73.8255 15.9817C75.2767 13.0721 74.1919 12.131 76.7279 11.9585V9.13516C74.1847 8.62508 71.8858 9.22136 71.1602 11.1898C70.0682 14.0132 71.038 15.4716 67.1657 15.3854" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M109.53 18.9784H105.413C104.443 22.9153 98.0278 22.319 97.9057 17.2686C97.7835 12.3905 102.87 11.708 104.802 13.9279C105.169 14.3589 105.169 14.6104 105.406 15.0414H109.4C109.4 13.3316 108.071 11.3631 106.613 10.3358C105.162 9.30846 102.863 8.71219 100.564 9.04985C96.4473 9.64614 93.667 12.8144 93.667 17.2614C93.7891 27.4414 108.553 28.0448 109.523 18.9712" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M79.6289 21.8873L79.1477 24.8831C81.5687 25.3932 83.2641 26.1691 85.1967 24.373C86.4036 23.2595 87.1364 21.3772 87.9842 19.5812L91.8564 11.8798C92.2228 11.111 92.9485 9.9975 92.9485 9.14258H88.4727C88.2285 9.91129 85.9295 15.0479 85.6852 15.3066L82.5386 9.14258H77.9407C77.9407 10.2561 81.9351 16.6716 82.7828 18.3024C83.2641 19.1573 83.6306 19.3298 83.2642 20.1847C82.1722 22.1531 82.1721 22.4118 79.6361 21.8945" fill="#5B846E"/><path d="M74.2057 34.8115V35.8676H70.2688V39.977H68.99V34.8115H74.2057ZM76.2748 34.8115V38.3964L79.6369 34.8115H80.8727V39.977H79.6082V36.4064L76.2532 39.977H75.0032V34.8115H76.2676H76.2748ZM87.4677 34.8115V39.977H86.1889V35.846H83.1644V39.977H81.9V34.8115H87.4677ZM93.6174 34.8115V35.8676H89.7667V36.8231H93.2294V37.8792H89.7667V38.9065H93.7611V39.9841H88.4879V34.8187H93.6174V34.8115ZM98.0428 34.8115C99.3719 34.8115 100.37 35.6233 100.37 36.8375C100.37 38.0516 99.3719 38.8275 98.0428 38.8275H95.9881V39.977H94.7093V34.8115H98.0428ZM95.9881 37.7642H97.9925C98.6463 37.7642 99.0989 37.4338 99.0989 36.8375C99.0989 36.2412 98.6463 35.8748 97.9925 35.8748H95.9881V37.7642ZM102.907 34.8115L104.889 38.5616H104.94L107.002 34.8115H108.639V39.977H107.382V36.3633H107.318L105.407 39.977H104.336L102.497 36.3633H102.432V39.977H101.197V34.8115H102.907ZM113.992 34.8115L116.391 39.977H115.041L114.674 39.1939H111.19L110.823 39.977H109.451L111.916 34.8115H113.992ZM111.664 38.1737H114.179L113.158 35.846H112.72L111.664 38.1737ZM120.544 34.8115C121.873 34.8115 122.871 35.6233 122.871 36.8375C122.871 38.0516 121.873 38.8275 120.544 38.8275H118.489V39.977H117.21V34.8115H120.544ZM118.489 37.7642H120.493C121.147 37.7642 121.6 37.4338 121.6 36.8375C121.6 36.2412 121.147 35.8748 120.493 35.8748H118.489V37.7642ZM124.969 34.8115V36.7154H126.614L128.037 34.8115H129.51L127.699 37.2039L129.639 39.977H128.123L126.643 37.7786H124.969V39.977H123.705V34.8115H124.969ZM135.516 34.8115V35.8676H131.665V36.8231H135.128V37.8792H131.665V38.9065H135.659V39.9841H130.386V34.8187H135.516V34.8115ZM142.276 34.8115V35.8604H139.977V39.9841H138.698V35.8604H136.399V34.8115H142.276Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2981 0.133797C16.0998 1.31919 15.2664 5.30641 15.1587 5.38544C14.0092 3.90549 11.5019 2.20283 9.0952 1.24734C6.37958 0.212815 3.13231 -0.160737 0 0.0619731C0 4.20006 1.14949 7.97176 3.34786 11.1544L5.43843 13.8125C4.08062 14.0352 3.24007 14.2579 2.19836 14.9189C1.36499 15.4361 0.423867 16.1761 0 16.916C1.04889 18.6187 3.34784 19.6532 5.43843 19.9478C5.23009 20.2423 4.60505 20.9105 4.38953 21.2769C1.45838 24.8258 0 28.8203 0 33.6983C3.13949 33.921 6.37958 33.5475 9.0952 32.5129C11.5019 31.6221 14.0092 29.7757 15.1587 28.3748C15.4748 28.7412 15.4748 29.9266 16.4159 31.4784C16.8326 32.2902 17.6731 33.3247 18.2981 33.6193C20.0726 32.5848 21.0138 30.3648 21.4376 28.3676C22.3788 29.1076 23.0038 29.9195 24.261 30.7313C28.1333 33.3176 31.79 33.9067 36.704 33.6911C36.4957 24.675 31.6823 20.7524 31.2656 19.9406C33.2556 19.5742 35.6551 18.6116 36.704 16.9089C35.6551 15.1344 33.2556 14.1717 31.2656 13.8053C31.3734 13.5108 32.099 12.8426 32.3145 12.4762C33.464 11.1472 34.3045 9.66723 35.0301 7.96458C36.1796 5.52196 36.704 3.08651 36.704 0.0547819C31.3734 -0.167928 26.6677 0.643892 22.6877 4.19288C22.271 4.6383 21.8543 5.08369 21.4304 5.37824C21.0138 3.38104 20.0726 1.24016 18.291 0.126606" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5323 16.9154L10.5595 14.3291C6.58661 11.671 4.07216 8.26569 3.03046 2.9422C4.70437 2.71949 7.52776 3.61033 8.785 4.19944C10.4589 4.93941 11.8167 5.90207 12.8656 7.00843C19.6618 14.0346 17.679 25.4143 8.68441 29.6314C7.42718 30.2205 4.6038 31.0395 3.03765 30.8168C3.87101 26.9015 5.12821 24.6815 7.21881 22.3179C8.9933 20.3207 10.4589 19.5089 12.5495 18.1798C12.9662 17.9571 13.1745 17.8134 13.5984 17.5117C13.8067 17.4399 13.8067 17.3609 14.1228 17.2172L14.5395 16.9226L14.5323 16.9154Z" fill="#B8D0A8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.6707 30.8102C25.9333 30.7383 19.7621 24.6031 19.7621 16.9088C19.7621 9.21453 25.9333 3.00739 33.6707 2.93555C33.5629 4.41549 32.6218 6.63539 32.1045 7.81359C28.8644 14.0207 23.426 15.5797 22.1688 16.9088C23.426 18.166 28.965 19.7896 32.1045 26.0758C32.629 27.1821 33.5701 29.4021 33.6707 30.8102Z" fill="#B8D0A8"/></svg>
+        </a>
+
+        <form class="vkusdom-search" role="search" action="#" method="get">
+          <button class="vkusdom-search__catalog" type="button" aria-haspopup="true">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-catalog"/></svg>
+            <span>Каталог</span>
+          </button>
+          <input class="vkusdom-search__input" type="search" name="q" placeholder="Поиск по сайту"
+                 aria-label="Поиск по сайту" autocomplete="off" enterkeyhint="search">
+          <button class="vkusdom-search__submit" type="submit" aria-label="Найти">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-search"/></svg>
+          </button>
+        </form>
+
+        <div class="vkusdom-header__actions">
+          <a class="vkusdom-header__action vkusdom-header__action--delivery" href="/delivery/">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-mappin"/></svg>
+            <span>Укажите способ получения</span>
+          </a>
+          <a class="vkusdom-header__icon-btn" href="#" aria-label="Избранное, 1 товар">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-heart"/></svg>
+            <span class="vkusdom-header__badge" aria-hidden="true">1</span>
+          </a>
+          <a class="vkusdom-header__icon-btn" href="#" aria-label="Корзина">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-cart"/></svg>
+          </a>
+          <a class="vkusdom-header__icon-btn" href="#" aria-label="Личный кабинет">
+            <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-user"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="vkusdom-header__menu">
+      <div class="vkusdom-container vkusdom-header__menu-inner">
+        <button class="vkusdom-header__nav-arrow vkusdom-header__nav-arrow--prev" type="button" aria-label="Прокрутить меню влево">
+          <svg class="vkusdom-icon vkusdom-icon--flip" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-caret"/></svg>
+        </button>
+        <nav class="vkusdom-header__nav" aria-label="Разделы каталога">
+          <ul class="vkusdom-header__nav-list">
+            <li><a class="vkusdom-header__nav-link" href="#">Акции</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Хиты продаж</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Новинки</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Сделано в Чеченской Республике</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Готовая еда</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Собственное производство</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Овощи и фрукты</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Мясо</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Рыба</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Сыры</a></li>
+            <li><a class="vkusdom-header__nav-link" href="#">Хлеб</a></li>
+          </ul>
+        </nav>
+        <button class="vkusdom-header__nav-arrow vkusdom-header__nav-arrow--next" type="button" aria-label="Прокрутить меню вправо">
+          <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-caret"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header class="m-vkusdom-header">
+    <div class="m-vkusdom-header__row">
+      <a class="m-vkusdom-logo" href="/" aria-label="ВкусДом — на главную">
+        <svg class="m-vkusdom-logo__image" width="43" height="40" viewBox="0 0 44 41" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.9354 0.300406C19.3001 1.72143 18.3011 6.50122 18.1719 6.59596C16.7939 4.82184 13.7882 2.78072 10.9031 1.63529C7.64771 0.39513 3.75494 -0.0526753 0 0.214304C0 5.17496 1.37799 9.6964 4.01334 13.5116L6.51948 16.6982C4.89176 16.9651 3.88412 17.2321 2.63535 18.0244C1.63633 18.6445 0.508123 19.5315 0 20.4186C1.25739 22.4597 4.01332 23.6999 6.51948 24.053C6.26972 24.4061 5.52044 25.207 5.26207 25.6463C1.74827 29.9007 0 34.6891 0 40.5369C3.76355 40.8038 7.64771 40.356 10.9031 39.1158C13.7882 38.0479 16.7939 35.8345 18.1719 34.1552C18.5508 34.5944 18.5508 36.0154 19.679 37.8757C20.1785 38.8488 21.1862 40.089 21.9354 40.4421C24.0627 39.2019 25.1909 36.5407 25.699 34.1465C26.8272 35.0336 27.5764 36.0068 29.0836 36.98C33.7256 40.0804 38.1092 40.7866 44 40.5282C43.7503 29.7199 37.98 25.0176 37.4805 24.0444C39.8661 23.6052 42.7426 22.4511 44 20.41C42.7426 18.2828 39.8661 17.1288 37.4805 16.6895C37.6097 16.3364 38.4796 15.5355 38.7379 15.0962C40.1159 13.503 41.1235 11.7289 41.9933 9.68778C43.3713 6.75962 44 3.84005 44 0.205684C37.6097 -0.061296 31.9687 0.911897 27.1975 5.16635C26.698 5.70031 26.1985 6.23424 25.6904 6.58734C25.1908 4.19313 24.0626 1.62668 21.9268 0.291785" fill="#6C8973"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.421 20.4182L12.6584 17.3179C7.89585 14.1313 4.88158 10.0491 3.6328 3.66746C5.63946 3.40048 9.02408 4.4684 10.5312 5.17461C12.5379 6.06167 14.1656 7.21569 15.423 8.54197C23.5702 16.9648 21.1932 30.6066 10.4106 35.6619C8.9035 36.3682 5.5189 37.35 3.64142 37.083C4.64045 32.3893 6.14754 29.7281 8.65371 26.8947C10.7809 24.5005 12.5379 23.5273 15.044 21.934C15.5435 21.667 15.7933 21.4948 16.3014 21.1331C16.5511 21.047 16.5512 20.9522 16.9301 20.78L17.4296 20.4269L17.421 20.4182Z" fill="#C6D1AA"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.3636 37.0746C31.0882 36.9885 23.6903 29.6336 23.6903 20.4099C23.6903 11.1862 31.0882 3.74518 40.3636 3.65906C40.2344 5.43318 39.1062 8.09435 38.4862 9.50676C34.602 16.9477 28.0825 18.8166 26.5754 20.4099C28.0825 21.917 34.7226 23.8634 38.4862 31.3991C39.1149 32.7254 40.2431 35.3866 40.3636 37.0746Z" fill="#C6D1AA"/></svg>
+      </a>
+
+      <form class="m-vkusdom-search" role="search" action="#" method="get">
+        <input class="m-vkusdom-search__input" type="search" name="q" placeholder="Поиск по сайту"
+               aria-label="Поиск по сайту" autocomplete="off" enterkeyhint="search">
+        <button class="m-vkusdom-search__submit" type="submit" aria-label="Найти">
+          <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-search"/></svg>
+        </button>
+      </form>
+
+      <button class="m-vkusdom-header__burger" type="button" aria-label="Открыть меню" aria-haspopup="dialog" aria-expanded="false" aria-controls="m-vkusdom-mobile-menu">
+        <span class="m-vkusdom-header__burger-box" aria-hidden="true">
+          <span class="m-vkusdom-header__burger-line"></span>
+          <span class="m-vkusdom-header__burger-line"></span>
+          <span class="m-vkusdom-header__burger-line"></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="m-vkusdom-delivery-toggle" role="group" aria-label="Способ получения заказа">
+      <button class="m-vkusdom-delivery-toggle__button" type="button" aria-pressed="false">
+        <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-bike"/></svg>
+        <span>Доставка</span>
+      </button>
+      <button class="m-vkusdom-delivery-toggle__button" type="button" aria-pressed="true">
+        <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-storefront"/></svg>
+        <span>Самовывоз</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="vkusdom-catalog vkusdom-catalog--desktop">
+      <div class="vkusdom-container">
+        <nav class="vkusdom-breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li class="vkusdom-breadcrumbs__item"><a class="vkusdom-breadcrumbs__link" href="/">Главная</a></li>
+            <li class="vkusdom-breadcrumbs__item">
+              <span class="vkusdom-breadcrumbs__separator" aria-hidden="true"><svg class="vkusdom-icon vkusdom-icon--sm" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-caret-sm"/></svg></span>
+              <span class="vkusdom-breadcrumbs__current" aria-current="page">Бренды</span>
+            </li>
+          </ol>
+        </nav>
+
+        <h1 class="vkusdom-catalog__title">
+          <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-h1"/></svg>
+          Бренды
+        </h1>
+
+        <section class="vkusdom-popular" aria-labelledby="vkusdom-popular-title">
+          <h2 class="vkusdom-popular__title" id="vkusdom-popular-title">Популярные бренды</h2>
+
+          <div class="vkusdom-popular__slider-wrap">
+            <div class="swiper vkusdom-popular__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_1.png" alt="Мираторг" width="215" height="150" decoding="sync"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_2.png" alt="Бренд-партнёр" width="215" height="150" decoding="sync"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_3.png" alt="Зелёная Линия" width="215" height="150" decoding="sync"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_4.png" alt="Гурмэ" width="215" height="150" loading="lazy" decoding="async"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_5.png" alt="Бренд-партнёр" width="215" height="150" loading="lazy" decoding="async"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_6.png" alt="Бренд-партнёр" width="215" height="150" loading="lazy" decoding="async"></a></div>
+                <div class="swiper-slide"><a class="vkusdom-brand-card vkusdom-brand-card--popular" href="#"><img class="vkusdom-brand-card__image" src="img/brand_7.png" alt="Бренд-партнёр" width="215" height="150" loading="lazy" decoding="async"></a></div>
+              </div>
+            </div>
+
+            <button class="vkusdom-popular__arrow vkusdom-popular__arrow--prev" type="button" aria-label="Предыдущие бренды">
+              <svg class="vkusdom-icon vkusdom-icon--flip" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-slider"/></svg>
+            </button>
+            <button class="vkusdom-popular__arrow vkusdom-popular__arrow--next" type="button" aria-label="Следующие бренды">
+              <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-slider"/></svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="vkusdom-brands" aria-labelledby="vkusdom-brands-title">
+          <h2 class="vkusdom-brands__title vkusdom-visually-hidden" id="vkusdom-brands-title">Все бренды по алфавиту</h2>
+
+          <div class="vkusdom-brands__filter" role="group" aria-label="Фильтр брендов по букве">
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="0-9" aria-pressed="false">0-9</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="А" aria-pressed="true">А</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Б" aria-pressed="false">Б</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="В" aria-pressed="false">В</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Г" aria-pressed="false">Г</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Д" aria-pressed="false">Д</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Е" aria-pressed="false">Е</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ё" aria-pressed="false">Ё</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ж" aria-pressed="false">Ж</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="З" aria-pressed="false">З</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="И" aria-pressed="false">И</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Й" aria-pressed="false">Й</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="К" aria-pressed="false">К</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Л" aria-pressed="false">Л</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="М" aria-pressed="false">М</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Н" aria-pressed="false">Н</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="О" aria-pressed="false">О</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="П" aria-pressed="false">П</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Р" aria-pressed="false">Р</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="С" aria-pressed="false">С</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Т" aria-pressed="false">Т</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="У" aria-pressed="false">У</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ф" aria-pressed="false">Ф</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Х" aria-pressed="false">Х</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ц" aria-pressed="false">Ц</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ш" aria-pressed="false">Ш</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Щ" aria-pressed="false">Щ</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Э" aria-pressed="false">Э</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Ю" aria-pressed="false">Ю</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Я" aria-pressed="false">Я</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="A" aria-pressed="false">A</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="B" aria-pressed="false">B</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="C" aria-pressed="false">C</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="D" aria-pressed="false">D</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="E" aria-pressed="false">E</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="F" aria-pressed="false">F</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="G" aria-pressed="false">G</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="H" aria-pressed="false">H</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="I" aria-pressed="false">I</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="J" aria-pressed="false">J</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="K" aria-pressed="false">K</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="L" aria-pressed="false">L</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="M" aria-pressed="false">M</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="N" aria-pressed="false">N</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="O" aria-pressed="false">O</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="P" aria-pressed="false">P</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Q" aria-pressed="false">Q</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="R" aria-pressed="false">R</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="S" aria-pressed="false">S</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="T" aria-pressed="false">T</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="U" aria-pressed="false">U</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="V" aria-pressed="false">V</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="W" aria-pressed="false">W</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="X" aria-pressed="false">X</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Y" aria-pressed="false">Y</button>
+            <button class="vkusdom-brands__filter-letter" type="button" data-letter="Z" aria-pressed="false">Z</button>
+          </div>
+
+          <hr class="vkusdom-divider">
+
+          <div class="vkusdom-brands__body">
+            <h3 class="vkusdom-brands__letter vkusdom-visually-hidden">Бренды на букву А</h3>
+            <div class="vkusdom-brands__letter" aria-hidden="true">А</div>
+            <div class="vkusdom-brands__cols" data-letter-group="А">
+              <ul class="vkusdom-brands__col">
+                <li><a class="vkusdom-brands__link" href="#">Аппетит</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Ароматный Двор</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Авантаж Кухня</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арт-Ланч</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аксиома Вкуса</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аврора Меню</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Алеронт</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Антарес Готовое</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Айсберг Салат</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аллегро Ланч</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аперитив Бокс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арена Вкуса</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аспект Готовое</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Алдекс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аура Блюд</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Анкорс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Амстердам Булка</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аризона Молочка</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Астра Творог</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Афина Творожок</a></li>
+              </ul>
+              <ul class="vkusdom-brands__col">
+                <li><a class="vkusdom-brands__link" href="#">Аллегро Сладость</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альпийский Родник</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Амурский Родник</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Апрель Фреш</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аверон</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альпина Паста</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арктика Бакалея</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Амрил</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аспект Паста</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Айс Чипс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альпина Чипсы</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аполлон Снек</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арнокс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аура Снек</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Агро-Эко</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альпина Органик</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Антей Органик</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Астра Эко</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Атлант Органик</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Афина Органик</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Антей Кот</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арктика Зоо</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аура Питомец</a></li>
+              </ul>
+              <ul class="vkusdom-brands__col">
+                <li><a class="vkusdom-brands__link" href="#">Арлекс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Алтрекс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Асвекс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аслекс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аладдин</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альба</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Айс Кофе</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Альпина Чай</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Амазонка Кофе</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Аснорм</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Асфикс</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Атвил</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Асгор</a></li>
+                <li><a class="vkusdom-brands__link" href="#">Арфикс</a></li>
+              </ul>
+            </div>
+            <p class="vkusdom-brands__empty" hidden>По этой букве брендов пока нет.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="m-vkusdom-catalog">
+      <h1 class="m-vkusdom-catalog__title">
+        <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-h1"/></svg>
+        Бренды
+      </h1>
+
+      <section class="m-vkusdom-brands" aria-labelledby="m-vkusdom-brands-title-mobile">
+        <h2 class="m-vkusdom-brands__title" id="m-vkusdom-brands-title-mobile">Все бренды</h2>
+
+        <div class="swiper m-vkusdom-brands__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_1.png" alt="Мираторг" width="115" height="80" decoding="sync"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_2.png" alt="Бренд-партнёр" width="115" height="80" decoding="sync"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_3.png" alt="Зелёная Линия" width="115" height="80" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_4.png" alt="Гурмэ" width="115" height="80" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_5.png" alt="Бренд-партнёр" width="115" height="80" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_6.png" alt="Бренд-партнёр" width="115" height="80" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="m-vkusdom-brand-card" href="#"><img class="m-vkusdom-brand-card__image" src="img/brand_7.png" alt="Бренд-партнёр" width="115" height="80" loading="lazy" decoding="async"></a></div>
+          </div>
+        </div>
+
+        <div class="m-vkusdom-brands__filter" role="group" aria-label="Фильтр брендов по букве">
+          <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--digits">
+            <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="0-9" aria-pressed="false">0-9</button>
+          </div>
+          <div class="m-vkusdom-brands__filter-group">
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--cyrillic">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="А" aria-pressed="true">А</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Б" aria-pressed="false">Б</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="В" aria-pressed="false">В</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Г" aria-pressed="false">Г</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Д" aria-pressed="false">Д</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Е" aria-pressed="false">Е</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ё" aria-pressed="false">Ё</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ж" aria-pressed="false">Ж</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="З" aria-pressed="false">З</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="И" aria-pressed="false">И</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Й" aria-pressed="false">Й</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="К" aria-pressed="false">К</button>
+            </div>
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--cyrillic">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Л" aria-pressed="false">Л</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="М" aria-pressed="false">М</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Н" aria-pressed="false">Н</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="О" aria-pressed="false">О</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="П" aria-pressed="false">П</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Р" aria-pressed="false">Р</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="С" aria-pressed="false">С</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Т" aria-pressed="false">Т</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="У" aria-pressed="false">У</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ф" aria-pressed="false">Ф</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Х" aria-pressed="false">Х</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ц" aria-pressed="false">Ц</button>
+            </div>
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--cyrillic">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ш" aria-pressed="false">Ш</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Щ" aria-pressed="false">Щ</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Э" aria-pressed="false">Э</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Ю" aria-pressed="false">Ю</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Я" aria-pressed="false">Я</button>
+            </div>
+          </div>
+          <div class="m-vkusdom-brands__filter-group">
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--latin">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="A" aria-pressed="false">A</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="B" aria-pressed="false">B</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="C" aria-pressed="false">C</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="D" aria-pressed="false">D</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="E" aria-pressed="false">E</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="F" aria-pressed="false">F</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="G" aria-pressed="false">G</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="H" aria-pressed="false">H</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="I" aria-pressed="false">I</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="J" aria-pressed="false">J</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="K" aria-pressed="false">K</button>
+            </div>
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--latin">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="L" aria-pressed="false">L</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="M" aria-pressed="false">M</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="N" aria-pressed="false">N</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="O" aria-pressed="false">O</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="P" aria-pressed="false">P</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Q" aria-pressed="false">Q</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="R" aria-pressed="false">R</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="S" aria-pressed="false">S</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="T" aria-pressed="false">T</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="U" aria-pressed="false">U</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="V" aria-pressed="false">V</button>
+            </div>
+            <div class="m-vkusdom-brands__filter-row m-vkusdom-brands__filter-row--latin">
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="W" aria-pressed="false">W</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="X" aria-pressed="false">X</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Y" aria-pressed="false">Y</button>
+              <button class="m-vkusdom-brands__filter-letter" type="button" data-letter="Z" aria-pressed="false">Z</button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="m-vkusdom-divider">
+
+        <div class="m-vkusdom-brands__body">
+          <h3 class="m-vkusdom-brands__letter vkusdom-visually-hidden">Бренды на букву А</h3>
+          <div class="m-vkusdom-brands__letter" aria-hidden="true">А</div>
+          <ul class="m-vkusdom-brands__list" data-letter-group="А">
+            <li><a class="m-vkusdom-brands__link" href="#">Аппетит</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Ароматный Двор</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Авантаж Кухня</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арт-Ланч</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аксиома Вкуса</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аврора Меню</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Алеронт</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Антарес Готовое</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Айсберг Салат</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аллегро Ланч</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аперитив Бокс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арена Вкуса</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аспект Готовое</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Алдекс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аура Блюд</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Анкорс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Амстердам Булка</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аризона Молочка</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Астра Творог</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Афина Творожок</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аллегро Сладость</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альпийский Родник</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Амурский Родник</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Апрель Фреш</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аверон</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альпина Паста</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арктика Бакалея</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Амрил</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аспект Паста</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Айс Чипс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альпина Чипсы</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аполлон Снек</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арнокс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аура Снек</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Агро-Эко</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альпина Органик</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Антей Органик</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Астра Эко</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Атлант Органик</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Афина Органик</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Антей Кот</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арктика Зоо</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аура Питомец</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арлекс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Алтрекс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Асвекс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аслекс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аладдин</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альба</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Айс Кофе</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Альпина Чай</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Амазонка Кофе</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Аснорм</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Асфикс</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Атвил</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Асгор</a></li>
+            <li><a class="m-vkusdom-brands__link" href="#">Арфикс</a></li>
+          </ul>
+          <p class="m-vkusdom-brands__empty" hidden>По этой букве брендов пока нет.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="vkusdom-footer vkusdom-footer--desktop">
+    <div class="vkusdom-container">
+      <hr class="vkusdom-footer__line">
+      <div class="vkusdom-footer__grid">
+        <div class="vkusdom-footer__info">
+          <a class="vkusdom-logo vkusdom-logo--footer" href="/" aria-label="ВкусДом — на главную">
+            <svg class="vkusdom-logo__image" width="197" height="48" viewBox="0 0 197 48" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M133.083 25.9646L133.23 32.5364H136.86L137.007 30.2768H148.486V32.5364H152.557V25.9646H150.668V10.9668H137.3L135.843 23.8085C135.55 25.7577 135.118 25.9646 133.083 25.9646ZM141.802 15.3825L145.58 15.279V26.0681H140.207C140.931 24.326 140.931 22.9892 141.224 20.928C141.224 19.6947 141.518 16.2018 141.802 15.3825Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M177.981 30.1823L182.923 30.2858V21.4544C183.794 21.8683 186.7 25.5596 187.278 25.6631C188.002 25.5596 188.149 25.1456 188.589 24.7403L191.789 21.5579V30.1909L196.877 30.2944V10.8809C194.264 10.8809 195.135 10.9844 193.824 12.2177L187.58 19.2034C186.709 18.7895 185.984 17.6597 185.251 16.9438C184.38 16.1245 180.749 11.8037 179.878 11.0879C179.585 10.7774 178.567 10.8809 177.99 10.9843V30.1909L177.981 30.1823Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M56.9375 30.182H63.768C66.0966 30.182 68.27 30.2855 69.8741 29.1557C71.185 28.4399 72.2027 26.8961 72.3407 24.8435C72.4873 22.5839 71.4696 20.8332 70.0121 20.2208C70.452 19.505 72.0474 18.4787 71.4696 15.4947C70.3053 9.43173 62.7503 10.9755 57.0841 10.872L56.9375 30.182ZM62.0259 15.2791C62.6037 15.1756 64.4925 15.1756 65.0789 15.2791C66.0966 15.3826 66.5279 15.8914 66.6745 16.8228C66.6745 17.9526 66.0966 18.4701 65.0789 18.4701C64.2079 18.4701 62.7504 18.5735 62.0259 18.3666V15.2877V15.2791ZM62.0259 22.5753C62.7504 22.4718 64.6391 22.5753 65.5102 22.5753C66.6744 22.5753 67.3989 22.8858 67.3989 24.1191C67.3989 25.3524 66.6744 25.7663 65.5102 25.7663C64.4925 25.7663 62.7504 25.8698 62.0259 25.6628V22.5839V22.5753Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M163.89 10.6568C158.224 11.2691 154.446 15.4865 155.024 21.7478C155.464 27.3968 159.966 31.2001 166.21 30.5792C171.583 29.9668 175.36 25.439 174.783 19.2812C174.205 13.9427 169.841 10.0359 163.881 10.6482M164.183 15.4865C170.721 14.3567 171.885 24.8353 165.632 25.7581C159.095 26.7844 157.784 16.5128 164.183 15.4865Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M80.6218 18.47V10.9668H75.5334V30.1733L80.6218 30.2768C80.6218 28.94 80.4752 23.8085 80.7685 22.8771H82.9505L87.1678 30.2768H92.9806C92.9806 28.94 91.0919 26.5769 90.3674 25.4471L87.461 20.9279C87.7542 20.4105 88.1854 19.9016 88.6253 19.1858C90.3674 15.6929 89.0651 14.5631 92.1096 14.3561V10.9668C89.0565 10.3544 86.2967 11.0702 85.4256 13.4333C84.1147 16.8227 85.279 18.5735 80.6304 18.47" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M131.487 22.7827H126.545C125.381 27.5089 117.679 26.793 117.533 20.7301C117.386 14.8741 123.492 14.0548 125.812 16.7197C126.252 17.2372 126.252 17.539 126.537 18.0565H131.332C131.332 16.0039 129.736 13.6408 127.986 12.4075C126.243 11.1742 123.484 10.4584 120.724 10.8638C115.782 11.5796 112.444 15.3829 112.444 20.7214C112.591 32.9422 130.314 33.6667 131.478 22.7741" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M95.5921 26.2753L95.0143 29.8716C97.9207 30.4839 99.956 31.4154 102.276 29.2593C103.725 27.9225 104.605 25.6629 105.622 23.5068L110.271 14.2615C110.711 13.3387 111.582 12.0019 111.582 10.9756H106.209C105.916 11.8984 103.156 18.0648 102.862 18.3753L99.085 10.9756H93.5654C93.5654 12.3124 98.3605 20.014 99.3782 21.9717C99.956 22.998 100.396 23.205 99.9561 24.2313C98.6452 26.5944 98.6451 26.9048 95.6007 26.2839" fill="#5B846E"/><path d="M89.0816 41.79V43.0578H84.3555V47.991H82.8203V41.79H89.0816ZM91.5655 41.79V46.0936L95.6016 41.79H97.0851V47.991H95.5672V43.7046L91.5396 47.991H90.0389V41.79H91.5568H91.5655ZM105.002 41.79V47.991H103.467V43.032H99.8362V47.991H98.3183V41.79H105.002ZM112.385 41.79V43.0578H107.762V44.2049H111.919V45.4727H107.762V46.706H112.557V47.9996H106.227V41.7987H112.385V41.79ZM117.697 41.79C119.293 41.79 120.492 42.7646 120.492 44.2221C120.492 45.6796 119.293 46.611 117.697 46.611H115.231V47.991H113.696V41.79H117.697ZM115.231 45.3347H117.637C118.422 45.3347 118.965 44.938 118.965 44.2221C118.965 43.5063 118.422 43.0664 117.637 43.0664H115.231V45.3347ZM123.536 41.79L125.916 46.2919H125.977L128.452 41.79H130.418V47.991H128.909V43.6529H128.831L126.537 47.991H125.252L123.045 43.6529H122.967V47.991H121.483V41.79H123.536ZM136.844 41.79L139.724 47.991H138.103L137.663 47.0509H133.48L133.04 47.991H131.393L134.351 41.79H136.844ZM134.049 45.8263H137.068L135.843 43.032H135.317L134.049 45.8263ZM144.709 41.79C146.304 41.79 147.503 42.7646 147.503 44.2221C147.503 45.6796 146.304 46.611 144.709 46.611H142.242V47.991H140.707V41.79H144.709ZM142.242 45.3347H144.649C145.433 45.3347 145.977 44.938 145.977 44.2221C145.977 43.5063 145.433 43.0664 144.649 43.0664H142.242V45.3347ZM150.022 41.79V44.0755H151.997L153.704 41.79H155.472L153.299 44.662L155.628 47.991H153.808L152.031 45.3519H150.022V47.991H148.504V41.79H150.022ZM162.682 41.79V43.0578H158.06V44.2049H162.216V45.4727H158.06V46.706H162.855V47.9996H156.524V41.7987H162.682V41.79ZM170.798 41.79V43.0492H168.038V47.9996H166.503V43.0492H163.743V41.79H170.798Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.9664 0.16062C19.3273 1.58365 18.3269 6.37018 18.1975 6.46505C16.8176 4.68843 13.8077 2.64444 10.9185 1.49739C7.65849 0.255477 3.76024 -0.192959 0 0.0743968C0 5.04205 1.37993 9.56986 4.019 13.3905L6.52867 16.5815C4.89866 16.8489 3.8896 17.1162 2.63906 17.9096C1.63863 18.5306 0.508839 19.4189 0 20.3072C1.25916 22.3512 4.01897 23.5931 6.52867 23.9467C6.27857 24.3003 5.52822 25.1024 5.26949 25.5422C1.75074 29.8027 0 34.5979 0 40.4538C3.76886 40.7212 7.65849 40.2727 10.9185 39.0308C13.8077 37.9614 16.8176 35.7449 18.1975 34.0631C18.577 34.503 18.577 35.926 19.7068 37.7889C20.207 38.7634 21.216 40.0053 21.9664 40.3589C24.0966 39.117 25.2264 36.4521 25.7352 34.0545C26.865 34.9428 27.6153 35.9174 29.1246 36.8919C33.7732 39.9967 38.163 40.7039 44.0621 40.4452C43.812 29.6216 38.0336 24.9126 37.5334 23.9381C39.9223 23.4982 42.8029 22.3426 44.0621 20.2986C42.8029 18.1684 39.9223 17.0127 37.5334 16.5729C37.6628 16.2193 38.5338 15.4172 38.7926 14.9773C40.1725 13.3818 41.1815 11.6052 42.0526 9.56123C43.4325 6.62894 44.0621 3.70526 44.0621 0.065764C37.6628 -0.201592 32.0138 0.772973 27.2359 5.03342C26.7356 5.56814 26.2354 6.10282 25.7266 6.45642C25.2264 4.05884 24.0966 1.48877 21.9577 0.151987" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4457 20.3066L12.6764 17.2019C7.90706 14.0108 4.88854 9.9229 3.638 3.53222C5.64748 3.26487 9.03688 4.33429 10.5461 5.04149C12.5556 5.92981 14.1856 7.08545 15.4448 8.41361C23.6035 16.8483 21.2231 30.5093 10.4254 35.5718C8.91613 36.279 5.52675 37.2622 3.64663 36.9949C4.64706 32.2946 6.15629 29.6296 8.66599 26.7922C10.7962 24.3946 12.5556 23.42 15.0653 21.8245C15.5655 21.5572 15.8156 21.3847 16.3245 21.0225C16.5746 20.9362 16.5746 20.8414 16.9541 20.6689L17.4542 20.3153L17.4457 20.3066Z" fill="#B8D0A8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.4206 36.9861C31.1321 36.8998 23.7238 29.5346 23.7238 20.2979C23.7238 11.0612 31.1321 3.60968 40.4206 3.52344C40.2912 5.30006 39.1614 7.96498 38.5405 9.37938C34.6509 16.8309 28.1222 18.7024 26.6129 20.2979C28.1222 21.8072 34.7716 23.7562 38.5405 31.3026C39.17 32.6307 40.2998 35.2957 40.4206 36.9861Z" fill="#B8D0A8"/></svg>
+          </a>
+
+          <nav class="vkusdom-footer__menu" aria-label="Футер-меню">
+            <ul>
+              <li><a class="vkusdom-footer__menu-link" href="#">Каталог</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Акции</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Мои бонусы</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Оплата и доставка</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Укажите способ получения</a></li>
+            </ul>
+            <ul>
+              <li><a class="vkusdom-footer__menu-link" href="#">Политика обработки ПДн</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Горячая линия</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Правовая информация</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">Вакансии</a></li>
+              <li><a class="vkusdom-footer__menu-link" href="#">О компании</a></li>
+            </ul>
+          </nav>
+
+          <div class="vkusdom-footer__apps">
+            <a href="https://apps.apple.com/" class="vkusdom-app-badge" target="_blank" rel="noopener noreferrer">
+              <img class="vkusdom-app-badge__icon" src="img/badge-apple.png" alt="" width="40" height="40" aria-hidden="true">
+              <span class="vkusdom-app-badge__text">Загрузите в<br>App Store</span>
+            </a>
+            <a href="https://play.google.com/" class="vkusdom-app-badge vkusdom-app-badge--gplay" target="_blank" rel="noopener noreferrer">
+              <img class="vkusdom-app-badge__icon" src="img/badge-gplay.png" alt="" width="40" height="40" aria-hidden="true">
+              <span class="vkusdom-app-badge__text">Доступно в<br>Google Play</span>
+            </a>
+            <a href="https://www.rustore.ru/" class="vkusdom-app-badge vkusdom-app-badge--rustore" target="_blank" rel="noopener noreferrer">
+              <img class="vkusdom-app-badge__icon" src="img/badge-rustore.png" alt="" width="40" height="40" aria-hidden="true">
+              <span class="vkusdom-app-badge__text">Загрузите в<br>RuStore</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="vkusdom-footer__connect">
+          <div class="vkusdom-footer__subscribe-box">
+		     <a class="vkusdom-subscribe" href="#">
+              <span>Будьте в курсе выгодных предложений</span>
+            </a>
+            <p class="vkusdom-footer__subscribe-note">Подпишитесь на рассылку и первыми узнавайте об акциях, скидках и новинках.</p>
+          </div>
+
+          <address class="vkusdom-footer__contacts">
+            <div class="vkusdom-footer__contact">
+              <span class="vkusdom-footer__contact-label">Телефон:</span>
+              <a class="vkusdom-footer__contact-value vkusdom-footer__contact-value--big" href="tel:+78712224488">+7 8712 22-44-88</a>
+            </div>
+            <div class="vkusdom-footer__contact">
+              <span class="vkusdom-footer__contact-label">E-mail:</span>
+              <a class="vkusdom-footer__contact-value vkusdom-footer__contact-value--big" href="mailto:info@vkusdom.ru">info@vkusdom.ru</a>
+            </div>
+            <div class="vkusdom-footer__contact">
+              <span class="vkusdom-footer__contact-label">Адрес:</span>
+              <span class="vkusdom-footer__contact-value">364024, Чеченская Республика, г. Грозный, проспект А.А. Кадырова, 115</span>
+            </div>
+            <div class="vkusdom-footer__contact">
+              <span class="vkusdom-footer__contact-label">График работы:</span>
+              <span class="vkusdom-footer__contact-value">Ежедневно с 08:00 до 23:00</span>
+            </div>
+          </address>
+
+          <div class="vkusdom-footer__socials">
+            <a class="vkusdom-social" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+			<svg class="m-vkusdom-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ВКонтакте">
+			<rect width="48" height="48" rx="24" fill="#5B846E"/>
+			<path d="M25.1798 32.3996C16.1599 32.3996 11.0151 26.0933 10.8008 15.5996H15.319C15.4674 23.3017 18.7983 26.5642 21.4366 27.2368V15.5996H25.691V22.2423C28.2963 21.9564 31.0336 18.9293 31.9571 15.5996H36.2114C35.8634 17.3265 35.1698 18.9616 34.1739 20.4026C33.178 21.8436 31.9013 23.0596 30.4235 23.9744C32.073 24.8103 33.53 25.9934 34.6982 27.4457C35.8664 28.898 36.7194 30.5864 37.2008 32.3996H32.5177C32.0856 30.8247 31.2073 29.415 29.9928 28.347C28.7784 27.279 27.282 26.6003 25.691 26.396V32.3996H25.1798Z" fill="white"/>
+			</svg>
+            </a>
+            <a class="vkusdom-social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Max">
+			  <svg class="m-vkusdom-social__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+				<rect width="48" height="48" rx="24" fill="#5B846E"/>
+				<path d="M23.5368 10.758C15.6089 11.1722 10.3756 17.3899 10.7062 25.2303C10.8506 28.6622 12.2302 31.6152 12.5571 34.8722C12.6407 35.716 12.3974 36.7573 13.3704 37.1259C14.5675 37.5782 16.4032 36.8181 17.4065 36.1226C17.7486 35.8908 18.0754 35.6209 18.3263 35.2865C19.3638 35.9744 20.3481 36.6395 21.5833 36.9359C27.0218 38.2395 32.981 35.2561 35.63 30.4636C40.6087 21.4602 33.878 10.2183 23.5368 10.758ZM20.4583 29.5477C20.0289 29.8822 19.6146 30.3382 19.1396 30.6005C18.4517 30.9691 18.2388 30.5853 17.9804 29.9772C17.1671 28.0427 17.0683 24.7477 17.5433 22.722C18.1818 19.9666 20.3139 17.5419 23.2441 17.2835C26.2085 17.0212 28.9601 18.5262 30.2029 21.2436C32.9544 27.2902 25.9121 33.2608 20.4583 29.5515V29.5477Z" fill="white"/>
+			  </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="vkusdom-footer__bottom">
+        <span>©2026. Официальный сайт сети «Вкусдом»&nbsp;—&nbsp;доставка продуктов на дом</span>
+        <a class="vkusdom-footer__bottom-link" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="m-vkusdom-footer">
+    <a class="m-vkusdom-logo m-vkusdom-logo--footer" href="/" aria-label="ВкусДом — на главную">
+      <svg class="m-vkusdom-logo__image" width="197" height="48" viewBox="0 0 197 48" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M133.083 25.9646L133.23 32.5364H136.86L137.007 30.2768H148.486V32.5364H152.557V25.9646H150.668V10.9668H137.3L135.843 23.8085C135.55 25.7577 135.118 25.9646 133.083 25.9646ZM141.802 15.3825L145.58 15.279V26.0681H140.207C140.931 24.326 140.931 22.9892 141.224 20.928C141.224 19.6947 141.518 16.2018 141.802 15.3825Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M177.981 30.1823L182.923 30.2858V21.4544C183.794 21.8683 186.7 25.5596 187.278 25.6631C188.002 25.5596 188.149 25.1456 188.589 24.7403L191.789 21.5579V30.1909L196.877 30.2944V10.8809C194.264 10.8809 195.135 10.9844 193.824 12.2177L187.58 19.2034C186.709 18.7895 185.984 17.6597 185.251 16.9438C184.38 16.1245 180.749 11.8037 179.878 11.0879C179.585 10.7774 178.567 10.8809 177.99 10.9843V30.1909L177.981 30.1823Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M56.9375 30.182H63.768C66.0966 30.182 68.27 30.2855 69.8741 29.1557C71.185 28.4399 72.2027 26.8961 72.3407 24.8435C72.4873 22.5839 71.4696 20.8332 70.0121 20.2208C70.452 19.505 72.0474 18.4787 71.4696 15.4947C70.3053 9.43173 62.7503 10.9755 57.0841 10.872L56.9375 30.182ZM62.0259 15.2791C62.6037 15.1756 64.4925 15.1756 65.0789 15.2791C66.0966 15.3826 66.5279 15.8914 66.6745 16.8228C66.6745 17.9526 66.0966 18.4701 65.0789 18.4701C64.2079 18.4701 62.7504 18.5735 62.0259 18.3666V15.2877V15.2791ZM62.0259 22.5753C62.7504 22.4718 64.6391 22.5753 65.5102 22.5753C66.6744 22.5753 67.3989 22.8858 67.3989 24.1191C67.3989 25.3524 66.6744 25.7663 65.5102 25.7663C64.4925 25.7663 62.7504 25.8698 62.0259 25.6628V22.5839V22.5753Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M163.89 10.6568C158.224 11.2691 154.446 15.4865 155.024 21.7478C155.464 27.3968 159.966 31.2001 166.21 30.5792C171.583 29.9668 175.36 25.439 174.783 19.2812C174.205 13.9427 169.841 10.0359 163.881 10.6482M164.183 15.4865C170.721 14.3567 171.885 24.8353 165.632 25.7581C159.095 26.7844 157.784 16.5128 164.183 15.4865Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M80.6218 18.47V10.9668H75.5334V30.1733L80.6218 30.2768C80.6218 28.94 80.4752 23.8085 80.7685 22.8771H82.9505L87.1678 30.2768H92.9806C92.9806 28.94 91.0919 26.5769 90.3674 25.4471L87.461 20.9279C87.7542 20.4105 88.1854 19.9016 88.6253 19.1858C90.3674 15.6929 89.0651 14.5631 92.1096 14.3561V10.9668C89.0565 10.3544 86.2967 11.0702 85.4256 13.4333C84.1147 16.8227 85.279 18.5735 80.6304 18.47" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M131.487 22.7827H126.545C125.381 27.5089 117.679 26.793 117.533 20.7301C117.386 14.8741 123.492 14.0548 125.812 16.7197C126.252 17.2372 126.252 17.539 126.537 18.0565H131.332C131.332 16.0039 129.736 13.6408 127.986 12.4075C126.243 11.1742 123.484 10.4584 120.724 10.8638C115.782 11.5796 112.444 15.3829 112.444 20.7214C112.591 32.9422 130.314 33.6667 131.478 22.7741" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M95.5921 26.2753L95.0143 29.8716C97.9207 30.4839 99.956 31.4154 102.276 29.2593C103.725 27.9225 104.605 25.6629 105.622 23.5068L110.271 14.2615C110.711 13.3387 111.582 12.0019 111.582 10.9756H106.209C105.916 11.8984 103.156 18.0648 102.862 18.3753L99.085 10.9756H93.5654C93.5654 12.3124 98.3605 20.014 99.3782 21.9717C99.956 22.998 100.396 23.205 99.9561 24.2313C98.6452 26.5944 98.6451 26.9048 95.6007 26.2839" fill="#5B846E"/><path d="M89.0816 41.79V43.0578H84.3555V47.991H82.8203V41.79H89.0816ZM91.5655 41.79V46.0936L95.6016 41.79H97.0851V47.991H95.5672V43.7046L91.5396 47.991H90.0389V41.79H91.5568H91.5655ZM105.002 41.79V47.991H103.467V43.032H99.8362V47.991H98.3183V41.79H105.002ZM112.385 41.79V43.0578H107.762V44.2049H111.919V45.4727H107.762V46.706H112.557V47.9996H106.227V41.7987H112.385V41.79ZM117.697 41.79C119.293 41.79 120.492 42.7646 120.492 44.2221C120.492 45.6796 119.293 46.611 117.697 46.611H115.231V47.991H113.696V41.79H117.697ZM115.231 45.3347H117.637C118.422 45.3347 118.965 44.938 118.965 44.2221C118.965 43.5063 118.422 43.0664 117.637 43.0664H115.231V45.3347ZM123.536 41.79L125.916 46.2919H125.977L128.452 41.79H130.418V47.991H128.909V43.6529H128.831L126.537 47.991H125.252L123.045 43.6529H122.967V47.991H121.483V41.79H123.536ZM136.844 41.79L139.724 47.991H138.103L137.663 47.0509H133.48L133.04 47.991H131.393L134.351 41.79H136.844ZM134.049 45.8263H137.068L135.843 43.032H135.317L134.049 45.8263ZM144.709 41.79C146.304 41.79 147.503 42.7646 147.503 44.2221C147.503 45.6796 146.304 46.611 144.709 46.611H142.242V47.991H140.707V41.79H144.709ZM142.242 45.3347H144.649C145.433 45.3347 145.977 44.938 145.977 44.2221C145.977 43.5063 145.433 43.0664 144.649 43.0664H142.242V45.3347ZM150.022 41.79V44.0755H151.997L153.704 41.79H155.472L153.299 44.662L155.628 47.991H153.808L152.031 45.3519H150.022V47.991H148.504V41.79H150.022ZM162.682 41.79V43.0578H158.06V44.2049H162.216V45.4727H158.06V46.706H162.855V47.9996H156.524V41.7987H162.682V41.79ZM170.798 41.79V43.0492H168.038V47.9996H166.503V43.0492H163.743V41.79H170.798Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.9664 0.16062C19.3273 1.58365 18.3269 6.37018 18.1975 6.46505C16.8176 4.68843 13.8077 2.64444 10.9185 1.49739C7.65849 0.255477 3.76024 -0.192959 0 0.0743968C0 5.04205 1.37993 9.56986 4.019 13.3905L6.52867 16.5815C4.89866 16.8489 3.8896 17.1162 2.63906 17.9096C1.63863 18.5306 0.508839 19.4189 0 20.3072C1.25916 22.3512 4.01897 23.5931 6.52867 23.9467C6.27857 24.3003 5.52822 25.1024 5.26949 25.5422C1.75074 29.8027 0 34.5979 0 40.4538C3.76886 40.7212 7.65849 40.2727 10.9185 39.0308C13.8077 37.9614 16.8176 35.7449 18.1975 34.0631C18.577 34.503 18.577 35.926 19.7068 37.7889C20.207 38.7634 21.216 40.0053 21.9664 40.3589C24.0966 39.117 25.2264 36.4521 25.7352 34.0545C26.865 34.9428 27.6153 35.9174 29.1246 36.8919C33.7732 39.9967 38.163 40.7039 44.0621 40.4452C43.812 29.6216 38.0336 24.9126 37.5334 23.9381C39.9223 23.4982 42.8029 22.3426 44.0621 20.2986C42.8029 18.1684 39.9223 17.0127 37.5334 16.5729C37.6628 16.2193 38.5338 15.4172 38.7926 14.9773C40.1725 13.3818 41.1815 11.6052 42.0526 9.56123C43.4325 6.62894 44.0621 3.70526 44.0621 0.065764C37.6628 -0.201592 32.0138 0.772973 27.2359 5.03342C26.7356 5.56814 26.2354 6.10282 25.7266 6.45642C25.2264 4.05884 24.0966 1.48877 21.9577 0.151987" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4457 20.3066L12.6764 17.2019C7.90706 14.0108 4.88854 9.9229 3.638 3.53222C5.64748 3.26487 9.03688 4.33429 10.5461 5.04149C12.5556 5.92981 14.1856 7.08545 15.4448 8.41361C23.6035 16.8483 21.2231 30.5093 10.4254 35.5718C8.91613 36.279 5.52675 37.2622 3.64663 36.9949C4.64706 32.2946 6.15629 29.6296 8.66599 26.7922C10.7962 24.3946 12.5556 23.42 15.0653 21.8245C15.5655 21.5572 15.8156 21.3847 16.3245 21.0225C16.5746 20.9362 16.5746 20.8414 16.9541 20.6689L17.4542 20.3153L17.4457 20.3066Z" fill="#B8D0A8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.4206 36.9861C31.1321 36.8998 23.7238 29.5346 23.7238 20.2979C23.7238 11.0612 31.1321 3.60968 40.4206 3.52344C40.2912 5.30006 39.1614 7.96498 38.5405 9.37938C34.6509 16.8309 28.1222 18.7024 26.6129 20.2979C28.1222 21.8072 34.7716 23.7562 38.5405 31.3026C39.17 32.6307 40.2998 35.2957 40.4206 36.9861Z" fill="#B8D0A8"/></svg>
+    </a>
+
+    <nav class="m-vkusdom-footer__menu" aria-label="Футер-меню">
+      <a class="m-vkusdom-footer__menu-link" href="#">Каталог</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Акции</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Мои бонусы</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Оплата и доставка</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Укажите способ получения</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Политика обработки ПДн</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Горячая линия</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Правовая информация</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">Вакансии</a>
+      <a class="m-vkusdom-footer__menu-link" href="#">О компании</a>
+    </nav>
+
+    <div class="m-vkusdom-footer__apps swiper" role="group" aria-label="Приложения магазина">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://apps.apple.com/" class="m-vkusdom-app-badge" target="_blank" rel="noopener noreferrer">
+            <img class="m-vkusdom-app-badge__icon" src="img/badge-apple.png" alt="" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            <span class="m-vkusdom-app-badge__text">Загрузите в<br>App Store</span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://play.google.com/" class="m-vkusdom-app-badge m-vkusdom-app-badge--gplay" target="_blank" rel="noopener noreferrer">
+            <img class="m-vkusdom-app-badge__icon" src="img/badge-gplay.png" alt="" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            <span class="m-vkusdom-app-badge__text">Доступно в<br>Google Play</span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.rustore.ru/" class="m-vkusdom-app-badge m-vkusdom-app-badge--rustore" target="_blank" rel="noopener noreferrer">
+            <img class="m-vkusdom-app-badge__icon" src="img/badge-rustore.png" alt="" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            <span class="m-vkusdom-app-badge__text">Загрузите в<br>RuStore</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-vkusdom-footer__subscribe-box">
+      <button class="m-vkusdom-subscribe" type="button" aria-haspopup="dialog">
+        <span>Будьте в курсе выгодных предложений</span>
+      </button>
+      <p class="m-vkusdom-footer__subscribe-note">Подпишитесь на рассылку и первыми узнавайте об акциях, скидках и новинках.</p>
+    </div>
+
+    <address class="m-vkusdom-footer__contacts">
+      <div class="m-vkusdom-footer__contact">
+        <span class="m-vkusdom-footer__contact-label">Телефон:</span>
+        <a class="m-vkusdom-footer__contact-value m-vkusdom-footer__contact-value--big" href="tel:+78712224488">+7 8712 22-44-88</a>
+      </div>
+      <div class="m-vkusdom-footer__contact">
+        <span class="m-vkusdom-footer__contact-label">E-mail:</span>
+        <a class="m-vkusdom-footer__contact-value m-vkusdom-footer__contact-value--big" href="mailto:info@vkusdom.ru">info@vkusdom.ru</a>
+      </div>
+      <div class="m-vkusdom-footer__contact">
+        <span class="m-vkusdom-footer__contact-label">Адрес:</span>
+        <span class="m-vkusdom-footer__contact-value">364024, Чеченская Республика, г. Грозный, проспект А.А. Кадырова, 115</span>
+      </div>
+      <div class="m-vkusdom-footer__contact">
+        <span class="m-vkusdom-footer__contact-label">График работы:</span>
+        <span class="m-vkusdom-footer__contact-value">Ежедневно с 08:00 до 23:00</span>
+      </div>
+    </address>
+
+    <div class="m-vkusdom-footer__socials">
+      <a class="m-vkusdom-social" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">		
+		<svg class="m-vkusdom-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ВКонтакте">
+		<rect width="48" height="48" rx="24" fill="#5B846E"/>
+		<path d="M25.1798 32.3996C16.1599 32.3996 11.0151 26.0933 10.8008 15.5996H15.319C15.4674 23.3017 18.7983 26.5642 21.4366 27.2368V15.5996H25.691V22.2423C28.2963 21.9564 31.0336 18.9293 31.9571 15.5996H36.2114C35.8634 17.3265 35.1698 18.9616 34.1739 20.4026C33.178 21.8436 31.9013 23.0596 30.4235 23.9744C32.073 24.8103 33.53 25.9934 34.6982 27.4457C35.8664 28.898 36.7194 30.5864 37.2008 32.3996H32.5177C32.0856 30.8247 31.2073 29.415 29.9928 28.347C28.7784 27.279 27.282 26.6003 25.691 26.396V32.3996H25.1798Z" fill="white"/>
+		</svg>
+      </a>
+      <a class="m-vkusdom-social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Max">
+	  <svg class="m-vkusdom-social__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		<rect width="48" height="48" rx="24" fill="#5B846E"/>
+		<path d="M23.5368 10.758C15.6089 11.1722 10.3756 17.3899 10.7062 25.2303C10.8506 28.6622 12.2302 31.6152 12.5571 34.8722C12.6407 35.716 12.3974 36.7573 13.3704 37.1259C14.5675 37.5782 16.4032 36.8181 17.4065 36.1226C17.7486 35.8908 18.0754 35.6209 18.3263 35.2865C19.3638 35.9744 20.3481 36.6395 21.5833 36.9359C27.0218 38.2395 32.981 35.2561 35.63 30.4636C40.6087 21.4602 33.878 10.2183 23.5368 10.758ZM20.4583 29.5477C20.0289 29.8822 19.6146 30.3382 19.1396 30.6005C18.4517 30.9691 18.2388 30.5853 17.9804 29.9772C17.1671 28.0427 17.0683 24.7477 17.5433 22.722C18.1818 19.9666 20.3139 17.5419 23.2441 17.2835C26.2085 17.0212 28.9601 18.5262 30.2029 21.2436C32.9544 27.2902 25.9121 33.2608 20.4583 29.5515V29.5477Z" fill="white"/>
+	  </svg>
+      </a>
+    </div>
+
+    <div class="m-vkusdom-footer__bottom">
+      <span>©2026. Официальный сайт сети «Вкусдом»&nbsp;—&nbsp;доставка продуктов на дом</span>
+      <a class="m-vkusdom-footer__bottom-link" href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <div class="m-vkusdom-mobile-menu" id="m-vkusdom-mobile-menu" hidden>
+    <div class="m-vkusdom-mobile-menu__overlay"></div>
+    <div class="m-vkusdom-mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Меню">
+      <div class="m-vkusdom-mobile-menu__head">
+        <a class="m-vkusdom-logo m-vkusdom-logo--header" href="/" aria-label="ВкусДом — на главную">
+          <svg class="m-vkusdom-logo__image" width="164" height="40" viewBox="0 0 164 40" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M110.859 21.6291L110.981 27.1034H114.006L114.128 25.2211H123.69V27.1034H127.081V21.6291H125.508V9.13574H114.372L113.158 19.833C112.914 21.4566 112.555 21.6291 110.859 21.6291ZM118.122 12.814L121.269 12.7278V21.7153H116.793C117.397 20.2641 117.397 19.1505 117.641 17.4335C117.641 16.4061 117.885 13.4965 118.122 12.814Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M148.259 25.1417L152.376 25.2279V17.8713C153.102 18.2161 155.523 21.291 156.004 21.3772C156.607 21.291 156.73 20.9461 157.096 20.6085L159.761 17.9575V25.1489L164 25.2351V9.06348C161.823 9.06348 162.549 9.14972 161.457 10.1771L156.255 15.9962C155.53 15.6514 154.926 14.7103 154.316 14.114C153.59 13.4315 150.566 9.83222 149.84 9.23593C149.596 8.9773 148.748 9.06347 148.267 9.14968V25.1489L148.259 25.1417Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.4293 25.1422H53.1192C55.0589 25.1422 56.8693 25.2285 58.2056 24.2873C59.2976 23.691 60.1453 22.4051 60.2603 20.6952C60.3824 18.813 59.5347 17.3546 58.3206 16.8445C58.687 16.2482 60.016 15.3933 59.5347 12.9076C58.5648 7.85712 52.2715 9.1431 47.5514 9.05689L47.4293 25.1422ZM51.668 12.728C52.1493 12.6418 53.7227 12.6418 54.2112 12.728C55.0589 12.8142 55.4182 13.2381 55.5403 14.0139C55.5403 14.9551 55.0589 15.3862 54.2112 15.3862C53.4856 15.3862 52.2715 15.4723 51.668 15.2999V12.7352V12.728ZM51.668 18.8058C52.2715 18.7196 53.8448 18.8058 54.5704 18.8058C55.5403 18.8058 56.1437 19.0644 56.1437 20.0918C56.1437 21.1191 55.5403 21.4639 54.5704 21.4639C53.7227 21.4639 52.2715 21.5502 51.668 21.3777V18.813V18.8058Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M136.522 8.87724C131.802 9.38732 128.655 12.9004 129.136 18.1161C129.503 22.8217 133.253 25.99 138.454 25.4727C142.93 24.9626 146.077 21.1909 145.595 16.0614C145.114 11.6144 141.479 8.35997 136.514 8.87005M136.766 12.9004C142.211 11.9592 143.181 20.688 137.973 21.4567C132.527 22.3116 131.435 13.7553 136.766 12.9004Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.1585 15.3854V9.13516H62.9199V25.1343L67.1585 25.2206C67.1585 24.107 67.0364 19.8324 67.2807 19.0565H69.0983L72.6114 25.2206H77.4535C77.4535 24.107 75.8802 22.1385 75.2767 21.1974L72.8556 17.4329C73.0999 17.0018 73.4591 16.578 73.8255 15.9817C75.2767 13.0721 74.1919 12.131 76.7279 11.9585V9.13516C74.1847 8.62508 71.8858 9.22136 71.1602 11.1898C70.0682 14.0132 71.038 15.4716 67.1657 15.3854" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M109.53 18.9784H105.413C104.443 22.9153 98.0278 22.319 97.9057 17.2686C97.7835 12.3905 102.87 11.708 104.802 13.9279C105.169 14.3589 105.169 14.6104 105.406 15.0414H109.4C109.4 13.3316 108.071 11.3631 106.613 10.3358C105.162 9.30846 102.863 8.71219 100.564 9.04985C96.4473 9.64614 93.667 12.8144 93.667 17.2614C93.7891 27.4414 108.553 28.0448 109.523 18.9712" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M79.6289 21.8873L79.1477 24.8831C81.5687 25.3932 83.2641 26.1691 85.1967 24.373C86.4036 23.2595 87.1364 21.3772 87.9842 19.5812L91.8564 11.8798C92.2228 11.111 92.9485 9.9975 92.9485 9.14258H88.4727C88.2285 9.91129 85.9295 15.0479 85.6852 15.3066L82.5386 9.14258H77.9407C77.9407 10.2561 81.9351 16.6716 82.7828 18.3024C83.2641 19.1573 83.6306 19.3298 83.2642 20.1847C82.1722 22.1531 82.1721 22.4118 79.6361 21.8945" fill="#5B846E"/><path d="M74.2057 34.8115V35.8676H70.2688V39.977H68.99V34.8115H74.2057ZM76.2748 34.8115V38.3964L79.6369 34.8115H80.8727V39.977H79.6082V36.4064L76.2532 39.977H75.0032V34.8115H76.2676H76.2748ZM87.4677 34.8115V39.977H86.1889V35.846H83.1644V39.977H81.9V34.8115H87.4677ZM93.6174 34.8115V35.8676H89.7667V36.8231H93.2294V37.8792H89.7667V38.9065H93.7611V39.9841H88.4879V34.8187H93.6174V34.8115ZM98.0428 34.8115C99.3719 34.8115 100.37 35.6233 100.37 36.8375C100.37 38.0516 99.3719 38.8275 98.0428 38.8275H95.9881V39.977H94.7093V34.8115H98.0428ZM95.9881 37.7642H97.9925C98.6463 37.7642 99.0989 37.4338 99.0989 36.8375C99.0989 36.2412 98.6463 35.8748 97.9925 35.8748H95.9881V37.7642ZM102.907 34.8115L104.889 38.5616H104.94L107.002 34.8115H108.639V39.977H107.382V36.3633H107.318L105.407 39.977H104.336L102.497 36.3633H102.432V39.977H101.197V34.8115H102.907ZM113.992 34.8115L116.391 39.977H115.041L114.674 39.1939H111.19L110.823 39.977H109.451L111.916 34.8115H113.992ZM111.664 38.1737H114.179L113.158 35.846H112.72L111.664 38.1737ZM120.544 34.8115C121.873 34.8115 122.871 35.6233 122.871 36.8375C122.871 38.0516 121.873 38.8275 120.544 38.8275H118.489V39.977H117.21V34.8115H120.544ZM118.489 37.7642H120.493C121.147 37.7642 121.6 37.4338 121.6 36.8375C121.6 36.2412 121.147 35.8748 120.493 35.8748H118.489V37.7642ZM124.969 34.8115V36.7154H126.614L128.037 34.8115H129.51L127.699 37.2039L129.639 39.977H128.123L126.643 37.7786H124.969V39.977H123.705V34.8115H124.969ZM135.516 34.8115V35.8676H131.665V36.8231H135.128V37.8792H131.665V38.9065H135.659V39.9841H130.386V34.8187H135.516V34.8115ZM142.276 34.8115V35.8604H139.977V39.9841H138.698V35.8604H136.399V34.8115H142.276Z" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2981 0.133797C16.0998 1.31919 15.2664 5.30641 15.1587 5.38544C14.0092 3.90549 11.5019 2.20283 9.0952 1.24734C6.37958 0.212815 3.13231 -0.160737 0 0.0619731C0 4.20006 1.14949 7.97176 3.34786 11.1544L5.43843 13.8125C4.08062 14.0352 3.24007 14.2579 2.19836 14.9189C1.36499 15.4361 0.423867 16.1761 0 16.916C1.04889 18.6187 3.34784 19.6532 5.43843 19.9478C5.23009 20.2423 4.60505 20.9105 4.38953 21.2769C1.45838 24.8258 0 28.8203 0 33.6983C3.13949 33.921 6.37958 33.5475 9.0952 32.5129C11.5019 31.6221 14.0092 29.7757 15.1587 28.3748C15.4748 28.7412 15.4748 29.9266 16.4159 31.4784C16.8326 32.2902 17.6731 33.3247 18.2981 33.6193C20.0726 32.5848 21.0138 30.3648 21.4376 28.3676C22.3788 29.1076 23.0038 29.9195 24.261 30.7313C28.1333 33.3176 31.79 33.9067 36.704 33.6911C36.4957 24.675 31.6823 20.7524 31.2656 19.9406C33.2556 19.5742 35.6551 18.6116 36.704 16.9089C35.6551 15.1344 33.2556 14.1717 31.2656 13.8053C31.3734 13.5108 32.099 12.8426 32.3145 12.4762C33.464 11.1472 34.3045 9.66723 35.0301 7.96458C36.1796 5.52196 36.704 3.08651 36.704 0.0547819C31.3734 -0.167928 26.6677 0.643892 22.6877 4.19288C22.271 4.6383 21.8543 5.08369 21.4304 5.37824C21.0138 3.38104 20.0726 1.24016 18.291 0.126606" fill="#5B846E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5323 16.9154L10.5595 14.3291C6.58661 11.671 4.07216 8.26569 3.03046 2.9422C4.70437 2.71949 7.52776 3.61033 8.785 4.19944C10.4589 4.93941 11.8167 5.90207 12.8656 7.00843C19.6618 14.0346 17.679 25.4143 8.68441 29.6314C7.42718 30.2205 4.6038 31.0395 3.03765 30.8168C3.87101 26.9015 5.12821 24.6815 7.21881 22.3179C8.9933 20.3207 10.4589 19.5089 12.5495 18.1798C12.9662 17.9571 13.1745 17.8134 13.5984 17.5117C13.8067 17.4399 13.8067 17.3609 14.1228 17.2172L14.5395 16.9226L14.5323 16.9154Z" fill="#B8D0A8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.6707 30.8102C25.9333 30.7383 19.7621 24.6031 19.7621 16.9088C19.7621 9.21453 25.9333 3.00739 33.6707 2.93555C33.5629 4.41549 32.6218 6.63539 32.1045 7.81359C28.8644 14.0207 23.426 15.5797 22.1688 16.9088C23.426 18.166 28.965 19.7896 32.1045 26.0758C32.629 27.1821 33.5701 29.4021 33.6707 30.8102Z" fill="#B8D0A8"/></svg>
+        </a>
+        <button class="m-vkusdom-mobile-menu__close" type="button" aria-label="Закрыть меню">
+          <svg class="vkusdom-icon" aria-hidden="true" focusable="false"><use href="#vkusdom-icon-x"/></svg>
+        </button>
+      </div>
+      <nav class="m-vkusdom-mobile-menu__nav" aria-label="Разделы каталога">
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Каталог</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Акции</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Мои бонусы</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Оплата и доставка</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Укажите способ получения</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Политика обработки ПДн</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Горячая линия</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Правовая информация</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">Вакансии</a>
+        <a class="m-vkusdom-mobile-menu__nav-link" href="#">О компании</a>
+      </nav>
+      <div class="m-vkusdom-mobile-menu__contacts">
+        <span class="m-vkusdom-mobile-menu__contacts-title">Связаться с нами</span>
+        <a class="m-vkusdom-mobile-menu__contacts-link" href="tel:+78712224488">+7 8712 22-44-88</a>
+        <a class="m-vkusdom-mobile-menu__contacts-link" href="mailto:info@vkusdom.ru">info@vkusdom.ru</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="vkusdom-brands-announce" class="vkusdom-visually-hidden" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# ===== ВкусДом — «Все бренды» (jQuery-версия) =====
+# Статический проект: сборки нет, css/style.css коммитится.
+
+# Системные файлы macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,7 @@
+# Единые переводы строк для всех платформ
+* text=auto eol=lf
+
+# Бинарные файлы — без merge/diff
+*.png binary
+*.jpg binary
+*.ico binary
