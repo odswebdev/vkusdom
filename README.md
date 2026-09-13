@@ -1,52 +1,133 @@
-# ВкусДом — «Все бренды» (версия на jQuery: HTML5 + CSS3 + JS)
+<div align="center">
 
-Точная копия основной версии ([`../vkusdom-brands-svg/`](../vkusdom-brands-svg/)),
-переписанная без препроцессора и без сторонних слайдеров:
+# 🛒 ВкусДом — страница «Все бренды»
 
-| | Основная версия | Эта версия |
-|---|---|---|
-| Разметка | `index.html` | идентична |
-| Стили | SCSS → компиляция | готовый `css/style.css` (CSS3, переменные `--vkusdom-*`) |
-| Логика | ванильный JS + Swiper | **jQuery 3.7** (CDN) |
-| Слайдеры | Swiper | Swiper (тот же конфиг: по одному слайду, 450 мс) |
+**Каталог брендов гипермаркета с алфавитным фильтром, слайдером популярных марок и полной адаптивностью.**
 
-## Отличия в реализации
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![Swiper](https://img.shields.io/badge/Swiper_11-6332F6?style=for-the-badge&logo=swiper&logoColor=white)](https://swiperjs.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-5B846E?style=for-the-badge)](LICENSE)
 
-- **Слайдеры**: Swiper с тем же конфигом, что в основной версии —
-  стрелки и свайп переключают ровно один слайд за раз (скорость 450 мс).
-  Если CDN недоступен, лента получает класс `vkusdom-fallback` и становится
-  нативным скроллом со снапом, а стрелки плавно прокручивают одну карточку.
-- **Прочая логика** повторяет основную версию модуль в модуль:
-  прокрутка меню, drawer с фокус-трапом, фильтр по алфавиту, поиск,
-  появление при прокрутке (IntersectionObserver), риппл.
-- Никакой сборки не нужно — статика. Достаточно открыть `index.html`
-  (для CDN-шрифтов и jQuery нужен интернет).
+</div>
 
-## Структура
+---
 
-```
-vkusdom-brands-jquery/
-├── index.html      — страница (разметка совпадает с основной версией)
-├── css/style.css   — готовый CSS3 (тот же, что компилируется из SCSS)
-├── js/main.js      — вся логика на jQuery
-├── img/            — ассеты (бейджи, соцсети, фото брендов)
+## 📸 Скриншот
+
+<div align="center">
+
+![Скриншот страницы «Все бренды»](docs/vkusdom-desktop.png)
+
+*Десктопная версия — популярные бренды и алфавитный каталог*
+
+</div>
+
+## ✨ Что на странице
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🖥️ Десктоп
+
+- **Хедер** — логотип, поиск с кнопкой «Каталог», выбор способа получения, иконки (избранное, корзина, ЛК), горизонтальное меню разделов со скроллом
+- **Хлебные крошки** — «Главная → Бренды»
+- **Популярные бренды** — слайдер с логотипами и стрелками
+- **Все бренды** — фильтр по буквам в три колонки
+- **Футер** — меню, приложения, подписка, контакты, соцсети
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 Мобильный
+
+- **Хедер** — компактный логотип, поиск, бургер
+- **Переключатель** «Доставка / Самовывоз»
+- **Drawer-меню** с фокус-трапом и блокировкой скролла
+- **Слайдер брендов** — компактные карточки
+- **Фильтр по буквам** — разбит на строки
+- **Футер** — аккордеонный, с бейджами приложений
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠 Стек
+
+<div align="center">
+
+| Слой | Технология |
+|:---|:---|
+| **Разметка** | HTML5, семантические теги, SVG-спрайт для иконок |
+| **Стили** | CSS3, переменные (`--vkusdom-*`), Flexbox, Grid |
+| **Логика** | Vanilla JS (ES5-совместимый, IIFE, без сборки) |
+| **Слайдеры** | Swiper 11 (CDN) + нативный fallback через `scroll-snap` |
+| **Шрифты** | Google Fonts — Geologica (400, 600) |
+| **Изображения** | WebP с `srcset`/`sizes`, SVG для логотипов и соцсетей |
+| **Интерактив** | IntersectionObserver (reveal), Pointer Events (ripple), `prefers-reduced-motion` |
+| **SEO** | Open Graph, Twitter Cards, JSON-LD (`BreadcrumbList`, `CollectionPage`), `canonical` |
+| **Доступность** | ARIA, focus-trap, skip-link, скрытие декоративных SVG |
+
+</div>
+
+> 📦 **Без сборщиков.** Никакого webpack / vite / gulp. Внешние зависимости — только CDN Swiper и Google Fonts.
+
+---
+
+## 📁 Структура
+vkusdom-f-6/
+├── index.html — страница целиком
+├── css/
+│ └── style.css — стили (CSS3 + переменные)
+├── js/
+│ └── main.js — логика (vanilla JS)
+├── img/ — ассеты
+│ ├── brand_N.png — исходники логотипов
+│ ├── brand_N-115.webp — мобильный слайдер
+│ ├── brand_N-215.webp — десктоп-слайдер
+│ ├── brand_N-430.webp — retina-версия
+│ ├── badge-.svg — иконки магазинов приложений
+│ ├── social-.svg — иконки соцсетей
+│ └── logo_.svg — логотипы ВкусДом
+├── scripts/
+│ ├── build-images.bat — генерация WebP (Windows)
+│ └── build-images.sh — генерация WebP (nix)
 └── README.md
-```
 
-Именование классов, CSS-переменные и разметка — см. README основной версии:
-десктопные блоки — `vkusdom-*`, мобильные (включая компоненты мобильного
-футера и drawer) — `m-vkusdom-*`; сквозные утилиты — `vkusdom-*`.
-Классы `swiper-*` в разметке оставлены намеренно: это точки подключения
-стилей лент, переименовывать их вслед за отказом от Swiper не нужно.
+## 🚀 Запуск
 
-## Публикация на GitHub
+### Вариант 1 — просто открыть
 
-Проект полностью статический — сборки не требует. Достаточно `git init`,
-закоммитить файлы и включить **GitHub Pages** (Settings → Pages →
-Deploy from a branch → `main` / root): страница заработает сразу,
-jQuery и Swiper подтягиваются с CDN. `.gitignore`, `.gitattributes`
-и `.editorconfig` уже настроены.
+Дважды кликни `index.html`.
 
-## Лицензия
+VS Code: расширение Live Server → правый клик на index.html → Open with Live Server.
 
-MIT — см. [LICENSE](LICENSE).
+✅ Мобильное меню открывается на мобильном (< 768px)
+
+✅ Фильтр по буквам переключает списки
+
+✅ Tab-навигация не выходит за пределы открытого drawer
+
+Исходные логотипы лежат в img/*.png. Скрипты создают три размера WebP: 115, 215 и 430 px.
+
+Проект полностью статический — сборка не нужна.
+
+📱 Проверено в браузерах
+<div align="center">
+https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white
+https://img.shields.io/badge/Safari-000000?style=flat-square&logo=safari&logoColor=white
+https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white
+https://img.shields.io/badge/Edge-0078D7?style=flat-square&logo=microsoftedge&logoColor=white
+
+</div>
+📄 Лицензия
+Распространяется под лицензией MIT. Подробнее — в файле LICENSE.
+
+<div align="center">
+Сделано с 💚 для ВкусДом
+
+</div> ```
