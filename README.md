@@ -76,27 +76,32 @@
 
 > 📦 **Без сборщиков.** Никакого webpack / vite / gulp. Внешние зависимости — только CDN Swiper и Google Fonts.
 
----
+<div align="center">
 
 ## 📁 Структура
+
+<pre>
 vkusdom-f-6/
-├── index.html — страница целиком
+├── index.html           — страница целиком
 ├── css/
-│ └── style.css — стили (CSS3 + переменные)
+│   └── style.css        — стили (CSS3 + переменные)
 ├── js/
-│ └── main.js — логика (vanilla JS)
-├── img/ — ассеты
-│ ├── brand_N.png — исходники логотипов
-│ ├── brand_N-115.webp — мобильный слайдер
-│ ├── brand_N-215.webp — десктоп-слайдер
-│ ├── brand_N-430.webp — retina-версия
-│ ├── badge-.svg — иконки магазинов приложений
-│ ├── social-.svg — иконки соцсетей
-│ └── logo_.svg — логотипы ВкусДом
+│   └── main.js          — логика (vanilla JS)
+├── img/                 — ассеты
+│   ├── brand_N.png      — исходники логотипов
+│   ├── brand_N-115.webp — мобильный слайдер
+│   ├── brand_N-215.webp — десктоп-слайдер
+│   ├── brand_N-430.webp — retina-версия
+│   ├── badge-*.svg      — иконки магазинов приложений
+│   ├── social-*.svg     — иконки соцсетей
+│   └── logo_*.svg       — логотипы ВкусДом
 ├── scripts/
-│ ├── build-images.bat — генерация WebP (Windows)
-│ └── build-images.sh — генерация WebP (nix)
+│   ├── build-images.bat — генерация WebP (Windows)
+│   └── build-images.sh  — генерация WebP (*nix)
 └── README.md
+</pre>
+
+</div>
 
 ## 🚀 Запуск
 
@@ -118,16 +123,17 @@ VS Code: расширение Live Server → правый клик на index.h
 
 📱 Проверено в браузерах
 <div align="center">
-https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white
-https://img.shields.io/badge/Safari-000000?style=flat-square&logo=safari&logoColor=white
-https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white
-https://img.shields.io/badge/Edge-0078D7?style=flat-square&logo=microsoftedge&logoColor=white
+
+[![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white)]
+[![Safari](https://img.shields.io/badge/Safari-000000?style=flat-square&logo=safari&logoColor=white)]
+[![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)]
+[![Edge](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white)]
 
 </div>
+
 📄 Лицензия
 Распространяется под лицензией MIT. Подробнее — в файле LICENSE.
 
 <div align="center">
 Сделано с 💚 для ВкусДом
-
-</div> ```
+</div>
